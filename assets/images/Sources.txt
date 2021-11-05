@@ -1,2 +1,0 @@
-page-bg = https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
-config-icon = https://icons.iconarchive.com/icons/iconsmind/outline/512/File-Settings-icon.png
