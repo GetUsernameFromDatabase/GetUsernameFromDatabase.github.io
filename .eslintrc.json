@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "plugin:import/recommended"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 120
+      }
+    ],
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "never",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "import/prefer-default-export": "warn",
+    "import/no-named-default": "warn"
+  }
+}
