@@ -65,8 +65,14 @@
         LOST IN <span>SPACE</span> App-Name? Hmm, looks like that page doesn't
         exist.
       </h3>
-      <img id="astronaut" src="./astronaut.svg" />
-      <img id="planet" src="./planet.svg" />
+      <img
+        id="astronaut"
+        src="./astronaut.svg"
+      >
+      <img
+        id="planet"
+        src="./planet.svg"
+      >
       <a href="/"><button class="denied__link">Go Home</button></a>
     </div>
   </div>
@@ -75,7 +81,8 @@
 <script>
 export default {
   name: 'Error404',
-  beforeCreate: () => {
+  beforeCreate: function () {
+    console.warn('Error404');
     document.body.className = 'permission_denied';
   },
 };

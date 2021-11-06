@@ -1,12 +1,20 @@
-export default [
+const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../App.vue'),
+    component: () => import('../views/index.vue'),
   },
   {
-    path: '/:catchAll(.*)',
-    name: 'NotFound',
-    component: () => import('../pages/error/error404.vue'),
-  }
+    path: '/badpage',
+    name: 'Error404',
+    component: () => import('../views/error/error404.vue'),
+  },
 ];
+
+routes.push({
+  path: '*',
+  name: 'NotFound',
+  redirect: '/badpage',
+});
+
+export default routes;
