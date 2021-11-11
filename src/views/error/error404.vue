@@ -82,7 +82,6 @@
 export default {
   name: 'Error404',
   beforeCreate: function () {
-    console.warn('Error404');
     document.body.className = 'permission_denied';
   },
 };

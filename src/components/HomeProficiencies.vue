@@ -1,17 +1,15 @@
 <template>
   <section>
     <h2>What I’m good at?</h2>
-    <MDBContainer>
-      <MDBRow class="proficiencies">
-        <Proficiency
-          v-for="proficiency in proficiencies"
-          :key="proficiency.title"
-          :title="proficiency.title"
-          :content="proficiency.content"
-        />
-      </MDBRow>
-      <MDBContainer />
-    </MDBContainer>
+    <div class="proficiencies row">
+      <Proficiency
+        v-for="proficiency in proficiencies"
+        :key="proficiency.title"
+        :title="proficiency.title"
+        :content="proficiency.content"
+      />
+      <div />
+    </div>
   </section>
 </template>
 
@@ -61,3 +59,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.proficiencies {
+	margin:0px;
+  padding:0px;
+}
+</style>

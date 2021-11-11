@@ -4,8 +4,8 @@
     "node": true
   },
   "extends": [
-    "plugin:vue/recommended",
     "eslint:recommended",
+    "plugin:vue/recommended",
     "plugin:import/recommended"
   ],
   "parserOptions": {
