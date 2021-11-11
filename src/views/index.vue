@@ -3,7 +3,7 @@
     <b-navbar
       id="navbar"
       v-b-scrollspy:content
-      variant="dark"
+      variant="primary"
       type="dark"
       fixed="top"
       toggleable="sm"
