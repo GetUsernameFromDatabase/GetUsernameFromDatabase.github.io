@@ -3,7 +3,7 @@
     class="proficiency-item-container"
     :class="column"
   >
-    <div class="proficiency-item">
+    <div class="proficiency-item bg-info-box">
       <h3>
         {{ title }}
       </h3>

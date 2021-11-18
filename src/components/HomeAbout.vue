@@ -14,6 +14,7 @@
     <div id="additional-description">
       <b-button
         v-b-toggle.additional-description-collapse
+        variant="info"
         @click="collapseButtonClick"
       >
         {{ collapseButtonTexts[0] }}

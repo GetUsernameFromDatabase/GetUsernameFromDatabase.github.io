@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2>What I’m good at?</h2>
+    <h2 class="mb-5">
+      What I’m good at?
+    </h2>
     <div class="proficiencies row">
       <Proficiency
         v-for="proficiency in proficiencies"
