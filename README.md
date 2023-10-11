@@ -6,11 +6,13 @@ Goal of it is to let people know more about me.
 
 Todo List:
 
-- use router
+- ~~use router~~
+- setup eslint properly
+- fix MainMenu no shown when small screen view (mobile navigation)
 - refactor the template code
-- i18n module
 - make it more dynamic/generative, currently most is hardcoded since I'm using a bostami template
 - change the colours to something I like more -- teal, cyan
+- i18n module
 
 ## Bootstrapped with React + TypeScript + Vite
 
