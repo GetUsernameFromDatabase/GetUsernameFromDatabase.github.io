@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 const BlogPage = () => {
   return (
    <div
-   className="tab_item bg-slate-50 dark:bg-[#111111] rounded-xl mb-14"
+   className="bg-slate-50 dark:bg-[#111111] rounded-xl mb-14"
  >
    <div className="pt-16 px-12 mt-8">
      <div>
