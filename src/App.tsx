@@ -1,15 +1,15 @@
 // App.tsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AboutPage from './pages/AboutPage';
-import BlogPage from './pages/BlogPage';
-import ContactPage from './pages/ContactPage';
-import NoPage from './pages/NoPage';
-import ResumePage from './pages/ResumePage';
-import WorkPage from './pages/WorkPage';
-import Sidebar from './components/Sidebar';
+import AboutPage from './pages/about-page';
+import BlogPage from './pages/blog-page';
+import ContactPage from './pages/contact-page';
+import NoPage from './pages/no-page';
+import ResumePage from './pages/resume-page';
+import WorkPage from './pages/work-page';
+import Sidebar from './components/sidebar';
 import { idMap } from './configuration/css-selectors';
-import Header from './components/Header';
-import Layout from './pages/Layout';
+import Header from './components/header';
+import Layout from './pages/layout';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <div id={idMap.appRoot}>
         <Header></Header>
         <main>
-          <section className="main_section mt-40">
+          <section className="mt-40">
             <div className="container grid grid-cols-12 lg:gap-10">
               <Sidebar></Sidebar>
               <Routes>

@@ -10,7 +10,7 @@ const slidesData = [
   // TODO: populate this
 ];
 
-const Slider = () => {
+const ProgrammingLanguageSlider = () => {
   return (
     <div className="py-6 px-6 rounded-xl dark:bg-black">
       <Swiper
@@ -38,4 +38,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default ProgrammingLanguageSlider;

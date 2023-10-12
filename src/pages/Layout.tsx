@@ -1,13 +1,16 @@
 // Layout.tsx
 import { Outlet } from 'react-router-dom';
-import MainMenu from '../components/MainMenu';
+import MainMenu from '../components/main-menu';
+import Footer from '../components/footer';
 
 const Layout = () => {
-  // TODO: refactor footer to be here, maybe even move top div of pages here
   return (
     <div className='col-span-12 lg:col-span-8 rounded-2xl'>
       <MainMenu />
-      <Outlet />
+      <div className='bg-slate-50 dark:bg-[#111111] rounded-xl mb-14'>
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 };

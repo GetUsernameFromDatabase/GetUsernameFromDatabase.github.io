@@ -1,6 +1,5 @@
-import AboutGrid from '../components/About/about-grid';
-import Footer from '../components/Footer';
-import Slider from '../components/Slider';
+import AboutGrid from '../components/about/about-grid';
+import ProgrammingLanguageSlider from '../components/programming-language-slider';
 
 const AboutPage = () => {
   const aboutInfo = [
@@ -47,35 +46,32 @@ const AboutPage = () => {
     "However, the key to success lies not only in acquiring knowledge but also in refining one's thought process. The better one becomes at learning, the more knowledge they can amass. By focusing on developing our ability to learn, we can unlock our full potential and achieve great things.",
   ];
   return (
-    <div className='tab_item bg-slate-50 dark:bg-[#111111] rounded-xl mb-14'>
-      <div className='pt-16 px-12 mt-8'>
-        <div>
-          <h2 className='text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52'>
-            About Me
-          </h2>
-          <div className='space-y-2'>
-            {aboutMe.map((item, index) => (
-              <p
-                key={index}
-                className='text-gray-700 dark:text-slate-500 leading-7 font-medium'
-              >
-                {item}
-              </p>
-            ))}
-          </div>
-        </div>
-        <h3 className='text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4'>
-          What I do!
-        </h3>
-        <AboutGrid items={aboutInfo}></AboutGrid>
-        <div>
-          <h3 className='text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4'>
-            Languages/Frameworks
-          </h3>
-          <Slider></Slider>
+    <div className='pt-16 px-12 mt-8'>
+      <div>
+        <h2 className='text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52'>
+          About Me
+        </h2>
+        <div className='space-y-2'>
+          {aboutMe.map((item, index) => (
+            <p
+              key={index}
+              className='text-gray-700 dark:text-slate-500 leading-7 font-medium'
+            >
+              {item}
+            </p>
+          ))}
         </div>
       </div>
-      <Footer></Footer>
+      <h3 className='text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4'>
+        What I do!
+      </h3>
+      <AboutGrid items={aboutInfo}></AboutGrid>
+      <div>
+        <h3 className='text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4'>
+          Languages/Frameworks
+        </h3>
+        <ProgrammingLanguageSlider></ProgrammingLanguageSlider>
+      </div>
     </div>
   );
 };
