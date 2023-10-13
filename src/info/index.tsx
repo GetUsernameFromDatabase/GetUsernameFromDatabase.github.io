@@ -1,8 +1,7 @@
 // as index.ts so I can segment it if it gets too long or I'd like another use for info
+import { BsGithub } from 'react-icons/bs';
 import { FaFacebookF, FaHackerrank } from 'react-icons/fa';
 import { RiLinkedinFill } from 'react-icons/ri';
-import { BsGithub } from 'react-icons/bs';
-
 
 export const personalInfo = {
   name: 'Ryan Murulo',

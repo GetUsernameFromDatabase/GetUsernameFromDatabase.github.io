@@ -1,8 +1,8 @@
 const BlogPage = () => {
   return (
-    <div className='pt-16 px-12 mt-8'>
+    <div className="mt-8 px-12 pt-16">
       <div>
-        <h2 className='text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52'>
+        <h2 className="after:contents[] relative -translate-y-1/2 font-roboto-slab text-4xl font-bold text-slate-900 after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-primary dark:text-slate-50">
           Blog
         </h2>
       </div>

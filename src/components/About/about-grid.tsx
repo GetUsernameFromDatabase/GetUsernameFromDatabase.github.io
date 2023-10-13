@@ -1,12 +1,14 @@
-import AboutCard, { AboutCardProps } from './about-card';
+import AboutCard, { AboutCardProperties } from './about-card';
 
-interface AboutGridProps {
-  items: AboutCardProps[];
+interface AboutGridProperties {
+  items: AboutCardProperties[];
 }
 
-const AboutGrid: React.FC<AboutGridProps> = ({ items }) => {
+const AboutGrid: React.FC<AboutGridProperties> = ({
+  items,
+}: AboutGridProperties) => {
   return (
-    <div className='grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2'>
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
       {items.map((item, index) => (
         <AboutCard key={index} {...item} />
       ))}

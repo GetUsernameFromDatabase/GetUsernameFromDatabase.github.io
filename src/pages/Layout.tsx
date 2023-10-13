@@ -1,13 +1,14 @@
 // Layout.tsx
 import { Outlet } from 'react-router-dom';
-import MainMenu from '../components/main-menu';
+
 import Footer from '../components/footer';
+import MainMenu from '../components/main-menu';
 
 const Layout = () => {
   return (
-    <div className='col-span-12 lg:col-span-8 rounded-2xl'>
+    <div className="col-span-12 rounded-2xl lg:col-span-8">
       <MainMenu />
-      <div className='bg-slate-50 dark:bg-[#111111] rounded-xl mb-14'>
+      <div className="mb-14 rounded-xl bg-slate-50 dark:bg-[#111111]">
         <Outlet />
         <Footer />
       </div>

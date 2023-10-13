@@ -1,15 +1,16 @@
 // App.tsx
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
+import Header from './components/header';
+import Sidebar from './components/sidebar';
+import { idMap } from './configuration/css-selectors';
 import AboutPage from './pages/about-page';
 import BlogPage from './pages/blog-page';
 import ContactPage from './pages/contact-page';
+import Layout from './pages/layout';
 import NoPage from './pages/no-page';
 import ResumePage from './pages/resume-page';
 import WorkPage from './pages/work-page';
-import Sidebar from './components/sidebar';
-import { idMap } from './configuration/css-selectors';
-import Header from './components/header';
-import Layout from './pages/layout';
 
 function App() {
   return (

@@ -1,8 +1,10 @@
-import ResumeItem from '../components/resume/resume-item';
+import ResumeItem, {
+  ResumeItemProperties,
+} from '../components/resume/resume-item';
 import ResumeKnowledgeItem from '../components/resume/resume-knowledge-item';
 import ResumeSkillItem from '../components/resume/resume-skill-item';
 
-const educationData = [
+const educationData: ResumeItemProperties[] = [
   {
     date: '2021-2023',
     title: 'Ph.D in Horriblensess',
@@ -21,7 +23,7 @@ const educationData = [
     institution: 'University Of Melbourne, NA',
     className: 'bg-indigo-50',
   },
-] as const;
+];
 
 const experienceData = [
   {
@@ -64,14 +66,14 @@ const ResumePage = () => {
   const sectionStyles = 'text-3xl dark:text-white font-medium pb-6';
 
   return (
-    <div className='pt-16 px-12 mt-8'>
-      <h2 className='text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52'>
+    <div className="mt-8 px-12 pt-16">
+      <h2 className="after:contents[] relative -translate-y-1/2 font-roboto-slab text-4xl font-bold text-slate-900 after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-primary dark:text-slate-50">
         Resume
       </h2>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div>
           <h3 className={sectionStyles}>Education</h3>
-          <div className='grid grid-cols-1 gap-6'>
+          <div className="grid grid-cols-1 gap-6">
             {educationData.map((item, index) => (
               <ResumeItem key={index} {...item} />
             ))}
@@ -79,16 +81,16 @@ const ResumePage = () => {
         </div>
         <div>
           <h3 className={sectionStyles}>Experience</h3>
-          <div className='grid grid-cols-1 gap-6'>
+          <div className="grid grid-cols-1 gap-6">
             {experienceData.map((item, index) => (
               <ResumeItem key={index} {...item} />
             ))}
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4 lg:pt-12'>
+      <div className="grid grid-cols-1 gap-6 pt-4 lg:grid-cols-2 lg:pt-12">
         <div>
-          <h3 className='text-3xl dark:text-white font-medium pb-8'>
+          <h3 className="pb-8 text-3xl font-medium dark:text-white">
             Working Skills
           </h3>
           {skillData.map((item, index) => (
@@ -96,10 +98,10 @@ const ResumePage = () => {
           ))}
         </div>
         <div>
-          <h3 className='text-3xl dark:text-white font-medium pb-8'>
-            Knowledge's
+          <h3 className="pb-8 text-3xl font-medium dark:text-white">
+            {"Knowledge's"}
           </h3>
-          <div className='flex flex-wrap gap-4'>
+          <div className="flex flex-wrap gap-4">
             {knowledgeLabels.map((label, index) => (
               <ResumeKnowledgeItem key={index} label={label} />
             ))}
