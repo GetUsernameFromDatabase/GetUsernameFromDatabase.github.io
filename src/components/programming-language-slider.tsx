@@ -16,7 +16,7 @@ const slidesData = [
 
 const ProgrammingLanguageSlider = () => {
   return (
-    <div className="rounded-xl px-6 py-6 dark:bg-black">
+    <div className="rounded-xl px-6 py-6 dark:bg-mid-dark">
       <Swiper
         modules={[Autoplay, Pagination]}
         slidesPerView={1}
@@ -28,6 +28,7 @@ const ProgrammingLanguageSlider = () => {
         }}
         pagination={{
           clickable: true,
+          bulletClass: 'swiper-pagination-bullet bg-primary',
         }}
         // Keep in mind -- window size is effectively -300 when >md due to sidebar
         breakpoints={{

@@ -11,12 +11,14 @@ const aboutInfo: AboutCardProperties[] = [
   {
     title: 'Ui/Ux Design',
     icon: MdDesignServices,
+    iconClassName: 'text-blue-600',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'App Development',
     icon: BsFillPhoneFill,
+    iconClassName: 'text-green-600',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
@@ -24,18 +26,21 @@ const aboutInfo: AboutCardProperties[] = [
   {
     title: 'Web Development',
     icon: BsCodeSlash,
+    iconClassName: 'text-purple-600',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'Database',
     icon: BsFiletypeSql,
+    iconClassName: 'text-indigo-600',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'Server',
     icon: BiServer,
+    iconClassName: 'text-red-600',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
@@ -49,6 +54,7 @@ const aboutInfo: AboutCardProperties[] = [
   {
     title: 'Management',
     icon: FaCogs,
+    iconClassName: 'text-orange-600',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },

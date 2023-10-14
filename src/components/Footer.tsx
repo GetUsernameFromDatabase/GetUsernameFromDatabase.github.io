@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="mt-8 rounded-bl-xl rounded-br-xl p-6 text-center dark:bg-black">
+    <div className="mt-8 rounded-bl-xl rounded-br-xl p-6 text-center">
       <p className="text-slate-800 dark:text-slate-50">
         View Source Code on{' '}
         <a
