@@ -90,6 +90,7 @@ const config = {
       },
     ],
     'import/newline-after-import': 'error',
+    'unicorn/no-null': 'off',
   },
 
   overrides: [

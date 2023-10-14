@@ -1,11 +1,20 @@
-import { BsFillCloudMoonFill, BsFillCloudSunFill } from 'react-icons/bs';
+/* eslint-disable security/detect-object-injection */
+import { FaMoon, FaSun } from 'react-icons/fa';
 
-import useTheme from '../hooks/use-theme';
+import type { AvailableThemes } from '../../@types/theme-context';
+import { useThemeContext } from '../contexts/theme/theme-context-hook';
 
 import NavigationMobile from './navigation/navigation-mobile';
 
+const themeChooseIcons: Record<AvailableThemes, JSX.Element> = {
+  dark: <FaSun className="text-amber-500" />,
+  light: <FaMoon className="text-[#132c3c]" />,
+};
 const Header = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, setTheme } = useThemeContext();
+  function toggleTheme() {
+    setTheme((previousValue) => (previousValue === 'dark' ? 'light' : 'dark'));
+  }
 
   return (
     <header className="z-50 bg-gray-900 py-5 dark:bg-black max-lg:sticky  max-lg:top-0 lg:bg-transparent lg:py-12">
@@ -17,10 +26,11 @@ const Header = () => {
         </div>
         <div className="flex items-center justify-end gap-3 text-right">
           <button
+            id="theme-button"
             onClick={toggleTheme}
-            className="darkmode inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-slate-100 text-2xl hover:bg-primary hover:text-slate-50"
+            className="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-slate-100 text-2xl hover:bg-primary hover:text-slate-50 dark:bg-mid-dark"
           >
-            {theme ? <BsFillCloudSunFill /> : <BsFillCloudMoonFill />}
+            {themeChooseIcons[theme]}
           </button>
           <NavigationMobile></NavigationMobile>
         </div>
