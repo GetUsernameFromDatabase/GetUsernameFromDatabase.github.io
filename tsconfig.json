@@ -21,6 +21,11 @@
     "noFallthroughCasesInSwitch": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["src", "@types"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "@types", "tools/translate-resources.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true,
+    "files": true,
+  }
 }
