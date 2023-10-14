@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../components/footer';
 import MainMenu from '../components/main-menu';
 
-const Layout = () => {
+const LayoutMain = () => {
   return (
     <div className="col-span-12 rounded-2xl lg:col-span-8">
       <MainMenu />
@@ -16,4 +16,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default LayoutMain;

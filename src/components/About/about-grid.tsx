@@ -1,4 +1,4 @@
-import AboutCard, { AboutCardProperties } from './about-card';
+import AboutCard, { type AboutCardProperties } from './about-card';
 
 interface AboutGridProperties {
   items: AboutCardProperties[];

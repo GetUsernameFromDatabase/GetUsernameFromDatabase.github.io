@@ -1,5 +1,5 @@
 import ResumeItem, {
-  ResumeItemProperties,
+  type ResumeItemProperties,
 } from '../components/resume/resume-item';
 import ResumeKnowledgeItem from '../components/resume/resume-knowledge-item';
 import ResumeSkillItem from '../components/resume/resume-skill-item';

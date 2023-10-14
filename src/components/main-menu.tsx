@@ -1,29 +1,26 @@
 import { NavLink } from 'react-router-dom';
 
-const menuItems = [
-  { to: '/', text: 'About Me', icon: 'fa-solid fa-house' },
-  { to: '/resume', text: 'Resume', icon: 'fa-regular fa-file-lines' },
-  { to: '/works', text: 'Works', icon: 'fa-brands fa-hive' },
-  { to: '/blog', text: 'Blogs', icon: 'fa-brands fa-blogger' },
-  { to: '/contact', text: 'Contact', icon: 'fa-regular fa-address-book' },
-];
+import { mainRoutesNavInfo } from '../configuration/routes';
+import { cn } from '../utils/classname-resolver';
 
 const MainMenu = () => {
+  // TODO: fix MainMenu no shown when small screen view (mobile navigation)
   return (
     <div className="-mt-10 hidden text-right lg:block">
       <ul className="menu gap-4 rounded-3xl bg-slate-50 px-10 py-6 dark:bg-black md:inline-flex">
-        {menuItems.map((menuItem, index) => (
+        {mainRoutesNavInfo.map((navInfo, index) => (
           <li key={index}>
             <NavLink
-              to={menuItem.to}
+              to={navInfo.to}
               className={({ isActive }) =>
-                `text-1xl hover:hover_active flex w-20 flex-col items-center justify-center rounded-xl bg-light-gray py-4 text-slate-900 hover:text-slate-50 dark:bg-mid-dark dark:text-slate-100 ${
-                  isActive ? 'active' : ''
-                }`
+                cn(
+                  'text-1xl hover:hover_active flex w-20 flex-col items-center justify-center rounded-xl bg-light-gray py-4 text-slate-900 hover:text-slate-50 dark:bg-mid-dark dark:text-slate-100',
+                  { active: isActive },
+                )
               }
             >
-              <i className={menuItem.icon}></i>
-              {menuItem.text}
+              {navInfo.icon}
+              {navInfo.text}
             </NavLink>
           </li>
         ))}

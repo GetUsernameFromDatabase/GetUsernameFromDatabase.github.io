@@ -1,50 +1,51 @@
 import AboutGrid from '../components/about/about-grid';
 import ProgrammingLanguageSlider from '../components/programming-language-slider';
 
-const AboutPage = () => {
-  const aboutInfo = [
-    {
-      iconSrc: '/images/icons/icon-1.svg',
-      title: 'Ui/Ux Design',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-    },
-    {
-      iconSrc: '/images/icons/icon-2.svg',
-      title: 'App Development',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-    },
-    {
-      iconSrc: '/images/icons/icon-3.svg',
-      title: 'Photography',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-    },
-    {
-      iconSrc: '/images/icons/icon-4.svg',
-      title: 'Photography',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-    },
-    {
-      iconSrc: '/images/icons/icon-5.svg',
-      title: 'Management',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-    },
-    {
-      iconSrc: '/images/icons/icon-6.svg',
-      title: 'Web Development',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-    },
-  ];
+const aboutInfo = [
+  {
+    iconSrc: '/images/icons/icon-1.svg',
+    title: 'Ui/Ux Design',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    iconSrc: '/images/icons/icon-2.svg',
+    title: 'App Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    iconSrc: '/images/icons/icon-3.svg',
+    title: 'Photography',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    iconSrc: '/images/icons/icon-4.svg',
+    title: 'Photography',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    iconSrc: '/images/icons/icon-5.svg',
+    title: 'Management',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    iconSrc: '/images/icons/icon-6.svg',
+    title: 'Web Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+];
 
-  const aboutMe = [
-    "In today's world, there is no limit to what one can learn. With the vast amount of information available, it is possible to find answers to almost any question or to draw conclusions based on the available data.",
-    "However, the key to success lies not only in acquiring knowledge but also in refining one's thought process. The better one becomes at learning, the more knowledge they can amass. By focusing on developing our ability to learn, we can unlock our full potential and achieve great things.",
-  ];
+const aboutMe = [
+  "In today's world, there is no limit to what one can learn. With the vast amount of information available, it is possible to find answers to almost any question or to draw conclusions based on the available data.",
+  "However, the key to success lies not only in acquiring knowledge but also in refining one's thought process. The better one becomes at learning, the more knowledge they can amass. By focusing on developing our ability to learn, we can unlock our full potential and achieve great things.",
+];
+
+const AboutPage = () => {
   return (
     <div className="mt-8 px-12 pt-16">
       <div>

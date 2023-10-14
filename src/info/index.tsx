@@ -1,10 +1,15 @@
 // as index.ts so I can segment it if it gets too long or I'd like another use for info
-import { BsGithub } from 'react-icons/bs';
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { BiMap } from 'react-icons/bi';
+import { BsGithub, BsJournalText, BsTelephoneOutbound } from 'react-icons/bs';
 import { FaFacebookF, FaHackerrank } from 'react-icons/fa';
 import { RiLinkedinFill } from 'react-icons/ri';
 
+import type { ContactItem, SocialMediaLink } from '../../@types/info';
+
 export const personalInfo = {
   name: 'Ryan Murulo',
+  avatar: 'https://avatars.githubusercontent.com/u/49920260?v=4',
   profession: 'Software Developer',
   email: 'rkruberg@gmail.com',
   location: 'Estonia/Tartu',
@@ -16,31 +21,58 @@ export const personalInfo = {
   hackerrank: 'https://www.hackerrank.com/rkruberg',
 } as const;
 
-// customClass is used to deal with vite + tailwindcss problem where
-//  vite does not compile css for text-[#1773EA]
-export const socialMediaLinks = [
+export const socialMediaLinks: Readonly<SocialMediaLink[]> = [
   {
-    name: 'Facebook',
+    label: 'Facebook',
     icon: <FaFacebookF />,
-    customClass: 'text-[#1773EA]',
+    className: 'text-[#1773EA]',
     link: personalInfo.facebook,
   },
   {
-    name: 'GitHub',
+    label: 'GitHub',
     icon: <BsGithub />,
-    customClass: 'text-[#2e3440]',
+    className: 'text-[#2e3440]',
     link: personalInfo.github,
   },
   {
-    name: 'HackerRank',
+    label: 'HackerRank',
     icon: <FaHackerrank />,
-    customClass: 'text-[#32c766]',
+    className: 'text-[#32c766]',
     link: personalInfo.hackerrank,
   },
   {
-    name: 'LinkedIn',
+    label: 'LinkedIn',
     icon: <RiLinkedinFill />,
-    customClass: 'text-[#0072b1]',
+    className: 'text-[#0072b1]',
     link: personalInfo.linkedin,
+  },
+];
+
+export const contactItems: Readonly<ContactItem[]> = [
+  {
+    label: 'Phone',
+    icon: <BsTelephoneOutbound />,
+    value: personalInfo.phone,
+    link: `tel:${personalInfo.phone}`,
+    className: 'text-cyan-500',
+  },
+  {
+    label: 'Location',
+    icon: <BiMap />,
+    value: personalInfo.location,
+    className: 'text-[#6AB5B9]',
+  },
+  {
+    label: 'E-mail',
+    icon: <BsJournalText />,
+    value: personalInfo.email,
+    link: `mailto:${personalInfo.email}`,
+    className: 'text-[#FD7590]',
+  },
+  {
+    label: 'Birthday',
+    icon: <AiOutlineCalendar />,
+    value: personalInfo.birthday,
+    className: 'text-[#C17CEB]',
   },
 ] as const;
