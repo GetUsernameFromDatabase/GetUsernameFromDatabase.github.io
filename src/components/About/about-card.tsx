@@ -1,25 +1,27 @@
-import * as React from 'react';
+import { cloneElement } from 'react';
+
+import { cn } from '../../utils/classname-resolver';
 
 export interface AboutCardProperties {
-  iconSrc: string;
+  icon: React.ReactElement;
   title: string;
   description: string;
+  iconClassName?: string;
 }
 
-const AboutCard: React.FC<AboutCardProperties> = ({
-  iconSrc,
-  title,
-  description,
-}) => {
+const AboutCard: React.FC<AboutCardProperties> = ({ ...properties }) => {
   return (
     <div className="flex gap-5 rounded-md border border-slate-200 p-4 dark:border-slate-800">
+      {cloneElement(properties.icon, {
+        // TODO: find a better system for this
+        className: cn('h-28 w-28', properties.iconClassName),
+      })}
       <div>
-        <img className="w-28" src={iconSrc} alt={title} />
-      </div>
-      <div>
-        <h4 className="text-xl font-semibold dark:text-white">{title}</h4>
+        <h4 className="text-xl font-semibold dark:text-white">
+          {properties.title}
+        </h4>
         <p className="text-gray-lite leading-8 dark:text-[#A6A6A6]">
-          {description}
+          {properties.description}
         </p>
       </div>
     </div>

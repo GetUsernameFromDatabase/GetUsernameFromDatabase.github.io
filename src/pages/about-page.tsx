@@ -1,40 +1,54 @@
+import { BiServer } from 'react-icons/bi';
+import { BsCodeSlash, BsFiletypeSql, BsFillPhoneFill } from 'react-icons/bs';
+import { FaCogs, FaGamepad } from 'react-icons/fa';
+import { MdDesignServices } from 'react-icons/md';
+
+import type { AboutCardProperties } from '../components/about/about-card';
 import AboutGrid from '../components/about/about-grid';
 import ProgrammingLanguageSlider from '../components/programming-language-slider';
 
-const aboutInfo = [
+const aboutInfo: AboutCardProperties[] = [
   {
-    iconSrc: '/images/icons/icon-1.svg',
     title: 'Ui/Ux Design',
+    icon: <MdDesignServices />,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
-    iconSrc: '/images/icons/icon-2.svg',
     title: 'App Development',
+    icon: <BsFillPhoneFill />,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
+
   {
-    iconSrc: '/images/icons/icon-3.svg',
-    title: 'Photography',
-    description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-  },
-  {
-    iconSrc: '/images/icons/icon-4.svg',
-    title: 'Photography',
-    description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-  },
-  {
-    iconSrc: '/images/icons/icon-5.svg',
-    title: 'Management',
-    description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
-  },
-  {
-    iconSrc: '/images/icons/icon-6.svg',
     title: 'Web Development',
+    icon: <BsCodeSlash />,
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    title: 'Database',
+    icon: <BsFiletypeSql />,
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    title: 'Server',
+    icon: <BiServer />,
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    title: 'Game',
+    icon: <FaGamepad />,
+    iconClassName: 'text-cyan-800',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
+  },
+  {
+    title: 'Management',
+    icon: <FaCogs />,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
@@ -56,7 +70,7 @@ const AboutPage = () => {
           {aboutMe.map((item, index) => (
             <p
               key={index}
-              className="font-medium leading-7 text-gray-700 dark:text-slate-500"
+              className="font-medium leading-7 text-gray-700 dark:text-slate-400"
             >
               {item}
             </p>
