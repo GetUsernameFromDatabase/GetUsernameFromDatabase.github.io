@@ -8,7 +8,7 @@ const SidebarNameProffesion = ({
   ...properties
 }: SidebarNameProffesionProperties) => {
   return (
-    <div>
+    <>
       <img
         src={properties.avatarSrc}
         alt="Profile"
@@ -22,7 +22,7 @@ const SidebarNameProffesion = ({
           {properties.profession}
         </h1>
       </div>
-    </div>
+    </>
   );
 };
 

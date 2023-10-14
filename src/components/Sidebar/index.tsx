@@ -12,7 +12,7 @@ interface SidebarProperties {
 const Sidebar = ({ id }: SidebarProperties) => {
   return (
     <section id={id} className="col-span-12 lg:col-span-4">
-      <div className="left-0 top-40 mt-10 rounded-2xl bg-slate-100 py-10 dark:bg-[#111111] md:sticky lg:mb-10">
+      <div className="left-0 top-40 mt-10 rounded-2xl bg-slate-100 py-10 dark:bg-[#111111] lg:sticky lg:mb-10">
         <SidebarNameProffesion
           avatarSrc={personalInfo.avatar}
           name={personalInfo.name}
