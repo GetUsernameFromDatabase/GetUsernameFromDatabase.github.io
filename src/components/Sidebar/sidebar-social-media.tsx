@@ -18,6 +18,7 @@ const SidebarSocialMedia = ({
             'hover:hover_active flex h-10 w-10 items-center justify-center rounded bg-light-gray shadow-md hover:text-slate-50 dark:bg-mid-dark',
             item.className,
           )}
+          title={item.label}
         >
           {item.icon({})}
         </a>
