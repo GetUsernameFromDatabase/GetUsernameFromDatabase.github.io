@@ -24,25 +24,25 @@ export const personalInfo = {
 export const socialMediaLinks: Readonly<SocialMediaLink[]> = [
   {
     label: 'Facebook',
-    icon: <FaFacebookF />,
+    icon: FaFacebookF,
     className: 'text-[#1773EA]',
     link: personalInfo.facebook,
   },
   {
     label: 'GitHub',
-    icon: <BsGithub />,
+    icon: BsGithub,
     className: 'text-[#2e3440]',
     link: personalInfo.github,
   },
   {
     label: 'HackerRank',
-    icon: <FaHackerrank />,
+    icon: FaHackerrank,
     className: 'text-[#32c766]',
     link: personalInfo.hackerrank,
   },
   {
     label: 'LinkedIn',
-    icon: <RiLinkedinFill />,
+    icon: RiLinkedinFill,
     className: 'text-[#0072b1]',
     link: personalInfo.linkedin,
   },
@@ -51,27 +51,27 @@ export const socialMediaLinks: Readonly<SocialMediaLink[]> = [
 export const contactItems: Readonly<ContactItem[]> = [
   {
     label: 'Phone',
-    icon: <BsTelephoneOutbound />,
+    icon: BsTelephoneOutbound,
     value: personalInfo.phone,
     link: `tel:${personalInfo.phone}`,
     className: 'text-cyan-500',
   },
   {
     label: 'Location',
-    icon: <BiMap />,
+    icon: BiMap,
     value: personalInfo.location,
     className: 'text-[#6AB5B9]',
   },
   {
     label: 'E-mail',
-    icon: <BsJournalText />,
+    icon: BsJournalText,
     value: personalInfo.email,
     link: `mailto:${personalInfo.email}`,
     className: 'text-[#FD7590]',
   },
   {
     label: 'Birthday',
-    icon: <AiOutlineCalendar />,
+    icon: AiOutlineCalendar,
     value: personalInfo.birthday,
     className: 'text-[#C17CEB]',
   },

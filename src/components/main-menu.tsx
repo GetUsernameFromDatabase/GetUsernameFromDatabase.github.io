@@ -19,7 +19,7 @@ const MainMenu = () => {
                 )
               }
             >
-              {navInfo.icon}
+              {navInfo.icon()}
               {navInfo.text}
             </NavLink>
           </li>

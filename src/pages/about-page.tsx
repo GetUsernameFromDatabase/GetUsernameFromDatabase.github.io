@@ -10,45 +10,45 @@ import ProgrammingLanguageSlider from '../components/programming-language-slider
 const aboutInfo: AboutCardProperties[] = [
   {
     title: 'Ui/Ux Design',
-    icon: <MdDesignServices />,
+    icon: MdDesignServices,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'App Development',
-    icon: <BsFillPhoneFill />,
+    icon: BsFillPhoneFill,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
 
   {
     title: 'Web Development',
-    icon: <BsCodeSlash />,
+    icon: BsCodeSlash,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'Database',
-    icon: <BsFiletypeSql />,
+    icon: BsFiletypeSql,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'Server',
-    icon: <BiServer />,
+    icon: BiServer,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'Game',
-    icon: <FaGamepad />,
+    icon: FaGamepad,
     iconClassName: 'text-cyan-800',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },
   {
     title: 'Management',
-    icon: <FaCogs />,
+    icon: FaCogs,
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.',
   },

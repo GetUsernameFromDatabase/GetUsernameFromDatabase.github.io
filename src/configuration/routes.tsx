@@ -26,9 +26,9 @@ export const mainRoutes: Readonly<RouteProps[]> = [
  * Connected to {@link mainRoutes}
  */
 export const mainRoutesNavInfo = [
-  { to: '/', text: 'About Me', icon: <BsFillHouseDoorFill /> },
-  { to: '/resume', text: 'Resume', icon: <BsFileTextFill /> },
-  { to: '/works', text: 'Works', icon: <FaHive /> },
-  { to: '/blog', text: 'Blogs', icon: <FaBlogger /> },
-  { to: '/contact', text: 'Contact', icon: <BiSolidContact /> },
+  { to: '/', text: 'About Me', icon: BsFillHouseDoorFill },
+  { to: '/resume', text: 'Resume', icon: BsFileTextFill },
+  { to: '/works', text: 'Works', icon: FaHive },
+  { to: '/blog', text: 'Blogs', icon: FaBlogger },
+  { to: '/contact', text: 'Contact', icon: BiSolidContact },
 ];

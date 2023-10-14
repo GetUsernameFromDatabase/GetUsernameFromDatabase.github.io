@@ -1,6 +1,8 @@
+import type { IconType } from 'react-icons';
+
 export interface SocialMediaLink {
   label: string;
-  icon: React.ReactNode;
+  icon: IconType;
   className: string;
   link: string;
 }
@@ -8,7 +10,7 @@ export interface SocialMediaLink {
 export interface ContactItem {
   label: string;
   value: string;
-  icon: React.ReactNode;
+  icon: IconType;
   className: string;
   link?: string;
 }

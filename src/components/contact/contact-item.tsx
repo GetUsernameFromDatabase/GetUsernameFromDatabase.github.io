@@ -1,5 +1,5 @@
 interface ContactItemProperties {
-  icon: React.ReactNode;
+  icon: JSX.Element;
   title: string;
   link: string;
   text: string;

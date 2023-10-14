@@ -21,7 +21,7 @@ const SidebarContactInfo = ({
               item.className,
             )}
           >
-            {item.icon}
+            {item.icon({})}
           </div>
           <div className="flex flex-col dark:text-white">
             <span className="text-xs font-bold text-slate-500">

@@ -19,7 +19,7 @@ const SidebarSocialMedia = ({
             item.className,
           )}
         >
-          {item.icon}
+          {item.icon({})}
         </a>
       ))}
     </div>
