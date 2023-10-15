@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 235.77 266.48">
+  <defs>
+    <clipPath id="clippath">
+      <path d="M226.46,59.81L127.19,2.49c-5.76-3.32-12.85-3.32-18.61,0L9.31,59.81C3.55,63.13,0,69.28,0,75.93v114.63c0,6.65,3.55,12.79,9.31,16.12l99.27,57.31c5.76,3.32,12.85,3.32,18.61,0l99.27-57.31c5.76-3.32,9.31-9.47,9.31-16.12V75.93c0-6.65-3.55-12.79-9.31-16.12Z" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path d="M226.46,59.81L127.19,2.49c-5.76-3.32-12.85-3.32-18.61,0L9.31,59.81C3.55,63.13,0,69.28,0,75.93v114.63c0,6.65,3.55,12.79,9.31,16.12l99.27,57.31c5.76,3.32,12.85,3.32,18.61,0l99.27-57.31c5.76-3.32,9.31-9.47,9.31-16.12V75.93c0-6.65-3.55-12.79-9.31-16.12Z" style="fill: none;"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path d="M226.46,59.81L127.19,2.49c-5.76-3.32-12.85-3.32-18.61,0L9.31,59.81C3.55,63.13,0,69.28,0,75.93v114.63c0,6.65,3.55,12.79,9.31,16.12l99.27,57.31c5.76,3.32,12.85,3.32,18.61,0l99.27-57.31c5.76-3.32,9.31-9.47,9.31-16.12V75.93c0-6.65-3.55-12.79-9.31-16.12Z" style="fill: #984793;"/>
+    <g style="clip-path: url(#clippath);">
+      <rect x="-10.71" y="110.07" width="382.48" height="190.48" transform="translate(-78.47 117.77) rotate(-30)" style="fill: #662976;"/>
+    </g>
+    <circle cx="117.88" cy="133.24" r="58.34" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 41px;"/>
+    <g style="clip-path: url(#clippath-1);">
+      <polygon points="237.38 60.78 237.38 130.34 237.38 199.9 177.63 165.12 118.64 131.05 177.63 95.56 237.38 60.78" style="fill: #7f2d83;"/>
+    </g>
+    <g>
+      <rect x="187.83" y="111.26" width="7.26" height="37.89" transform="translate(382.92 260.42) rotate(-180)" style="fill: #fff;"/>
+      <rect x="205.38" y="111.26" width="7.26" height="37.89" transform="translate(418.03 260.42) rotate(-180)" style="fill: #fff;"/>
+      <rect x="196.61" y="102.48" width="7.26" height="37.89" transform="translate(78.81 321.67) rotate(-90)" style="fill: #fff;"/>
+      <rect x="196.61" y="120.04" width="7.26" height="37.89" transform="translate(61.26 339.23) rotate(-90)" style="fill: #fff;"/>
+    </g>
+  </g>
+</svg>
