@@ -5,7 +5,7 @@ import { cn } from '../../utils/classname-resolver';
 export interface AboutCardProperties {
   icon: IconType;
   title: string;
-  description: string;
+  description: string | string[];
   iconClassName?: string;
 }
 

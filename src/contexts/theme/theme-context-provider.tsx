@@ -12,6 +12,7 @@ interface ThemeContextProviderProperties {
 export const ThemeContextProvider = ({
   children,
 }: ThemeContextProviderProperties) => {
+  // TODO: maybe add storing the value to local storage orsm
   const [theme, setTheme] = useState<ThemeContextState['theme']>(
     userPrefersDarkMode() ? 'dark' : 'light',
   );

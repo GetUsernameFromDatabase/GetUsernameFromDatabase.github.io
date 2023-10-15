@@ -3,6 +3,85 @@
     "myInfo": {
       "profession": "tarkvara arendaja"
     },
-    "about-me": "Tänapäeva maailmas pole õppimisel piiranguid. Olemasoleva suure hulga teabe abil on võimalik leida vastuseid peaaegu igale küsimusele või teha olemasolevate andmete põhjal järeldusi. Edu võti ei peitu aga ainult teadmiste omandamises, vaid ka oma mõttekäigu lihvimises. Mida paremaks ta õppimisel läheb, seda rohkem teadmisi nad saavad koguda. Keskendudes oma õppimisvõime arendamisele, saame vallandada oma täieliku potentsiaali ja saavutada suuri asju."
+    "about-me": {
+      "title": "Minust",
+      "content": [
+        "Tänapäeva maailmas pole õppimisel piiranguid. Olemasoleva suure hulga teabe abil on võimalik leida vastuseid peaaegu igale küsimusele või teha olemasolevate andmete põhjal järeldusi.",
+        "Edu võti ei peitu aga ainult teadmiste omandamises, vaid ka oma mõttekäigu lihvimises. Mida paremaks ta õppimisel läheb, seda rohkem teadmisi nad saavad koguda. Keskendudes oma õppimisvõime arendamisele, saame vallandada oma täieliku potentsiaali ja saavutada suuri asju."
+      ],
+      "what-i-do": {
+        "title": "Mida ma teen",
+        "front-end": {
+          "title": "Esiotsa arendus",
+          "description": [
+            "Keskendun funktsionaalse/responsiivse disaini loomisele",
+            "Kasutatavad raamistikud: React, Vue",
+            "Stiilimiseks eelistan kasutada tailwindcss-i või bootstrapi – ma eelistan mitte kirjutada css-i"
+          ]
+        },
+        "back-end": {
+          "title": "Tagaotsa arendamine",
+          "description": [
+            "Isiklikult eelistan taustaprogrammi – loogika kasutamine ja andmetega manipuleerimine on minu jaoks mõistlikum",
+            "Keeled, mida olen taustaprogrammi jaoks kasutanud: JavaScript, TypeScript (node.js), C"
+          ]
+        },
+        "mobile-development": {
+          "title": "Mobiilirakenduste arendus",
+          "description": [
+            "Mul on vähe kogemusi mobiilirakenduste loomisel, kasutades xamarini (C"
+          ]
+        },
+        "database": {
+          "title": "Andmebaas",
+          "description": [
+            "Taustaprogrammiga töötamine nõuab tavaliselt ka andmete salvestamist",
+            "Nii et andmete töötlemise/salvestuse osas olen saanud kogemusi SQL-iga (Postgres, Oracle, MySQL, SQLite)"
+          ]
+        },
+        "dev-ops": {
+          "title": "DevOps",
+          "description": [
+            "Automatiseerimine on üks minu põhiväärtusi – mulle ei meeldi korduvad ülesanded",
+            "Olen õppinud looma CI/CD torujuhtmeid, et automatiseerida ehitus- ja testimis-/lintmiskoodi"
+          ]
+        },
+        "server-management": {
+          "title": "Serverihaldus",
+          "description": [
+            "Rakenduste majutamiseks olen kasutanud oma vana arvutit serverina (RHEL-põhine – CentOS, AlmaLinux)",
+            "Kasutan seda samba (SMB), ArchiSteamFarmi ja mõne oma rakenduse (Discord Server Bot) hostimiseks."
+          ]
+        }
+      },
+      "languages-frameworks": "Mida ma kasutan"
+    },
+    "contact-page": {
+      "title": "Võtke ühendust",
+      "contact-me": "Saatke mulle e-kiri"
+    },
+    "blog-page": {
+      "title": "Blogi"
+    },
+    "resume-page": {
+      "title": "Jätka",
+      "experience": "Kogemused",
+      "education": "Haridus",
+      "working-skills": "Tööoskused",
+      "knowledges": "Teadmised"
+    },
+    "work-page": {
+      "title": "Töö"
+    },
+    "footer": "Vaadake lähtekoodi sisse"
+  },
+  "common": {
+    "forms": {
+      "subject": "teema",
+      "body": "keha",
+      "send-email": "Saada email",
+      "send-email-tooltip": "See suunab teid teie süsteemi e-posti rakendusse"
+    },
+    "download-cv": "Laadige alla CV"
   }
 }

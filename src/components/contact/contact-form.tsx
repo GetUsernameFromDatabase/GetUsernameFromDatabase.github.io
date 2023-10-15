@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 interface ContactViaMailFormProperties {
   recipientEmail: string;
 }
@@ -5,6 +7,7 @@ interface ContactViaMailFormProperties {
 const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
   ...properties
 }) => {
+  const { t } = useTranslation();
   return (
     <form
       className="mx-auto rounded-lg bg-white p-4 shadow-lg dark:bg-[#1f1f1f]"
@@ -15,7 +18,7 @@ const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
           htmlFor="subject"
           className="block text-sm font-semibold text-gray-700 dark:text-slate-100"
         >
-          Subject:
+          {t('forms.subject', { ns: 'common' })}:
         </label>
         <input
           type="text"
@@ -29,7 +32,7 @@ const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
           htmlFor="body"
           className="block text-sm font-semibold text-gray-700 dark:text-slate-100"
         >
-          Body:
+          {t('forms.body', { ns: 'common' })}:
         </label>
         <textarea
           id="body"
@@ -40,9 +43,10 @@ const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
       </div>
       <button
         type="submit"
+        title={t('forms.send-email-tooltip', { ns: 'common' })}
         className="w-full rounded-md bg-primary py-2 font-semibold text-white hover:bg-primary-dark hover:shadow-md focus:outline-none dark:bg-primary-dark dark:hover:bg-primary"
       >
-        Send Email
+        {t('forms.send-email', { ns: 'common' })}
       </button>
     </form>
   );

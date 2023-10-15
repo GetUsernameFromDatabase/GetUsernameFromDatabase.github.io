@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
-import { mainRoutesNavInfo } from '../../configuration/routes';
+import { useMainRoutesNavInfo } from '../../configuration/routes';
 import { cn } from '../../utils/classname-resolver';
 
 const NavigationMain = () => {
+  const mainRoutesNavInfo = useMainRoutesNavInfo();
   return (
     <nav className="menu gap-4 rounded-3xl bg-slate-50 px-10 py-6 dark:bg-black md:inline-flex">
       {mainRoutesNavInfo.map((navInfo, index) => (

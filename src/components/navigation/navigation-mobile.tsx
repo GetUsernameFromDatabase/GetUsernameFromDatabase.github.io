@@ -4,10 +4,11 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-import { mainRoutesNavInfo } from '../../configuration/routes';
+import { useMainRoutesNavInfo } from '../../configuration/routes';
 import { cn } from '../../utils/classname-resolver';
 
 const NavigationMobile = () => {
+  const mainRoutesNavInfo = useMainRoutesNavInfo();
   return (
     <nav className="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary text-2xl text-slate-50 lg:hidden">
       <Menu as="div" className="relative inline-block text-left">

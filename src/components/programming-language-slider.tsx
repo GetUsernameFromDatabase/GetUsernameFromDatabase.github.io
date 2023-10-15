@@ -7,9 +7,10 @@ import 'swiper/css/navigation';
 const slidesData = [
   'https://www.python.org/static/img/python-logo.png',
   '/images/java.png',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/600px-PHP-logo.svg.png',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/320px-PHP-logo.svg.png',
   '/images/csharp.svg',
   '/images/react.svg',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/320px-HTML5_logo_and_wordmark.svg.png',
   // TODO: populate this properly
 ];
 

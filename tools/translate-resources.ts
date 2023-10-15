@@ -78,7 +78,8 @@ async function translateObject(
 
     switch (typeof source) {
       case 'string': {
-        // !!! DO NOT STORE TRANSLATE OPTIONS AS A SEPERATE VARIABLE -- caching issues
+        // ! translation options object is used for caching
+        // ! make sure new object is given to translate
         const translated = await translate(source, { to: locale.lang ?? 'en' });
         return translated;
       }

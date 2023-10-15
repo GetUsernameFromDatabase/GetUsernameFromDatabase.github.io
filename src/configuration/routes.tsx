@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { BiSolidContact } from 'react-icons/bi';
 import { BsFileTextFill, BsFillHouseDoorFill } from 'react-icons/bs';
 import { FaBlogger, FaHive } from 'react-icons/fa';
@@ -25,10 +26,14 @@ export const mainRoutes: Readonly<RouteProps[]> = [
 /**
  * Connected to {@link mainRoutes}
  */
-export const mainRoutesNavInfo = [
-  { to: '/', text: 'About Me', icon: BsFillHouseDoorFill },
-  { to: '/resume', text: 'Resume', icon: BsFileTextFill },
-  { to: '/works', text: 'Works', icon: FaHive },
-  { to: '/blog', text: 'Blogs', icon: FaBlogger },
-  { to: '/contact', text: 'Contact', icon: BiSolidContact },
-];
+export const useMainRoutesNavInfo = () => {
+  const { t } = useTranslation();
+
+  return [
+    { to: '/', text: t('about-me.title'), icon: BsFillHouseDoorFill },
+    { to: '/resume', text: t('resume-page.title'), icon: BsFileTextFill },
+    { to: '/works', text: t('work-page.title'), icon: FaHive },
+    { to: '/blog', text: t('blog-page.title'), icon: FaBlogger },
+    { to: '/contact', text: t('contact-page.title'), icon: BiSolidContact },
+  ];
+};

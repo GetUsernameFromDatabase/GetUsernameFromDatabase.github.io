@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import ResumeItem, {
   type ResumeItemProperties,
 } from '../components/resume/resume-item';
@@ -64,25 +66,26 @@ const knowledgeLabels = [
 
 const ResumePage = () => {
   const sectionStyles = 'text-3xl dark:text-white font-medium pb-6';
+  const { t } = useTranslation();
 
   return (
     <div className="mt-8 px-12 pt-16">
       <h2 className="after:contents[] relative -translate-y-1/2 font-roboto-slab text-4xl font-bold text-slate-900 after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-primary dark:text-slate-50">
-        Resume
+        {t('resume-page.title')}
       </h2>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div>
-          <h3 className={sectionStyles}>Education</h3>
+          <h3 className={sectionStyles}>{t('resume-page.experience')}</h3>
           <div className="grid grid-cols-1 gap-6">
-            {educationData.map((item, index) => (
+            {experienceData.map((item, index) => (
               <ResumeItem key={index} {...item} />
             ))}
           </div>
         </div>
         <div>
-          <h3 className={sectionStyles}>Experience</h3>
+          <h3 className={sectionStyles}>{t('resume-page.education')}</h3>
           <div className="grid grid-cols-1 gap-6">
-            {experienceData.map((item, index) => (
+            {educationData.map((item, index) => (
               <ResumeItem key={index} {...item} />
             ))}
           </div>
@@ -91,7 +94,7 @@ const ResumePage = () => {
       <div className="grid grid-cols-1 gap-6 pt-4 lg:grid-cols-2 lg:pt-12">
         <div>
           <h3 className="pb-8 text-3xl font-medium dark:text-white">
-            Working Skills
+            {t('resume-page.working-skills')}
           </h3>
           {skillData.map((item, index) => (
             <ResumeSkillItem key={index} {...item} />
@@ -99,7 +102,7 @@ const ResumePage = () => {
         </div>
         <div>
           <h3 className="pb-8 text-3xl font-medium dark:text-white">
-            {"Knowledge's"}
+            {t('resume-page.knowledges')}
           </h3>
           <div className="flex flex-wrap gap-4">
             {knowledgeLabels.map((label, index) => (

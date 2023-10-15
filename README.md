@@ -6,11 +6,15 @@ Goal of it is to let people know more about me.
 
 Todo List:
 
-- change the colours to something I like more -- teal, cyan
-- i18n module
+- theme -- change the colours to something I like more (teal, cyan)
+- i18n module -- currently just language change button
+- typography -- look over text size readability
 - do the todos scattered around the code
-- look over text size readability
 - populate
+  - blogs -- just thoughts, links to stuff I like/adore
+  - works -- github repo links
+  - resume -- duh
+
 
 ## Bootstrapped with React + TypeScript + Vite
 

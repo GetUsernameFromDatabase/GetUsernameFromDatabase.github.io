@@ -3,6 +3,85 @@
     "myInfo": {
       "profession": "software developer"
     },
-    "about-me": "In today's world, there is no limit to what one can learn. With the vast amount of information available, it is possible to find answers to almost any question or to draw conclusions based on the available data. However, the key to success lies not only in acquiring knowledge but also in refining one's thought process. The better one becomes at learning, the more knowledge they can amass. By focusing on developing our ability to learn, we can unlock our full potential and achieve great things."
+    "about-me": {
+      "title": "About Me",
+      "content": [
+        "In today's world, there is no limit to what one can learn. With the vast amount of information available, it is possible to find answers to almost any question or to draw conclusions based on the available data.",
+        "However, the key to success lies not only in acquiring knowledge but also in refining one's thought process. The better one becomes at learning, the more knowledge they can amass. By focusing on developing our ability to learn, we can unlock our full potential and achieve great things."
+      ],
+      "what-i-do": {
+        "title": "What I do",
+        "front-end": {
+          "title": "Front End Development",
+          "description": [
+            "I focus on creating functional/responsive designs",
+            "Frameworks that I use: React, Vue",
+            "For styling I prefer to use tailwindcss or bootstrap -- I prefer not to write css"
+          ]
+        },
+        "back-end": {
+          "title": "Back End Development",
+          "description": [
+            "Personally I prefer backend -- using logic and manipulating data makes more sense to me",
+            "Languages I've used for backend: JavaScript, TypeScript (node.js), C#, Java, PHP"
+          ]
+        },
+        "mobile-development": {
+          "title": "Mobile Application Development",
+          "description": [
+            "I have little experience with creating mobile applications using xamarin (C#)"
+          ]
+        },
+        "database": {
+          "title": "Database",
+          "description": [
+            "Working on the backend usually requires data to be stored as well",
+            "So for data manipulation/storage I have become experienced with SQL (Postgres, Oracle, MySQL, SQLite)"
+          ]
+        },
+        "dev-ops": {
+          "title": "DevOps",
+          "description": [
+            "Automation is one of my core values -- I do not like repetitive tasks",
+            "I have learned to create CI/CD pipelines to automate building and testing/linting code"
+          ]
+        },
+        "server-management": {
+          "title": "Server Management",
+          "description": [
+            "To host applications I've utilized my old pc as a server (RHEL based -- CentOS, AlmaLinux)",
+            "I use it to host samba (SMB), ArchiSteamFarm, and some of my own applications (Discord Server Bot)"
+          ]
+        }
+      },
+      "languages-frameworks": "What I use"
+    },
+    "contact-page": {
+      "title": "Contact",
+      "contact-me": "Feel free to send me an e-mail"
+    },
+    "blog-page": {
+      "title": "Blog"
+    },
+    "resume-page": {
+      "title": "Resume",
+            "experience": "Experience",
+      "education": "Education",
+      "working-skills": "Working Skills",
+      "knowledges": "Knowledges"
+    },
+    "work-page": {
+      "title": "Work"
+    },
+    "footer": "View Source Code on"
+  },
+  "common": {
+    "forms": {
+      "subject": "subject",
+      "body": "body",
+      "send-email": "Send Email",
+      "send-email-tooltip": "This forwards you to your systems e-mail application"
+    },
+    "download-cv": "Download CV"
   }
 }
