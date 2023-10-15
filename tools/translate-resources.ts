@@ -31,7 +31,7 @@ function parseArguments() {
   const cwd = process.cwd();
   const resourcesPath = path.join(
     cwd,
-    parseArgument(0, './src/i18n/resources'),
+    parseArgument(0, './src/plugins/i18n/resources'),
   );
   const sourceLocalePath = path.join(
     resourcesPath,
@@ -91,11 +91,9 @@ async function translateFile(file: TranslationFile, locale: LocaleFile) {
 
   const parseObjectLevel: TranslationFile = {};
   for (const key in translatedResources) {
-    let value = translatedResources[key];
+    const value = translatedResources[key];
     const keySplit = key.split('.');
     const keyLevel = keySplit.length;
-
-    if (typeof value === 'string') value = `${value}`.toLowerCase();
 
     let currentParent = parseObjectLevel;
     for (let index = 0; index < keyLevel; index++) {

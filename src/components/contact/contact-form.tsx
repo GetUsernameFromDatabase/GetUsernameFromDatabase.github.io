@@ -40,7 +40,7 @@ const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
       </div>
       <button
         type="submit"
-        className="hover:bg-primary-dark dark:bg-primary-dark w-full rounded-md bg-primary py-2 font-semibold text-white hover:shadow-md focus:outline-none dark:hover:bg-primary"
+        className="w-full rounded-md bg-primary py-2 font-semibold text-white hover:bg-primary-dark hover:shadow-md focus:outline-none dark:bg-primary-dark dark:hover:bg-primary"
       >
         Send Email
       </button>

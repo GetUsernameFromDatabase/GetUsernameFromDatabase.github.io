@@ -10,7 +10,6 @@ import type { ContactItem, SocialMediaLink } from '../../@types/info';
 export const personalInfo = {
   name: 'Ryan Murulo',
   avatar: 'https://avatars.githubusercontent.com/u/49920260?v=4',
-  profession: 'Software Developer',
   email: 'rkruberg@gmail.com',
   location: 'Estonia/Tartu',
   phone: '+372 5388 9416',

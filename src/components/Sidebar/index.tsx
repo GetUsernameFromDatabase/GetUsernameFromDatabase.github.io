@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 import { contactItems, personalInfo, socialMediaLinks } from '../../info';
+import { capitalizeWords } from '../../utils/string-manipulation';
 
 import SidebarContactInfo from './sidebar-contact-info';
 import SidebarCvDownload from './sidebar-cv-download';
@@ -10,13 +13,14 @@ interface SidebarProperties {
 }
 
 const Sidebar = ({ id }: SidebarProperties) => {
+  const { t } = useTranslation();
   return (
     <section id={id} className="col-span-12 lg:col-span-4">
       <div className="left-0 top-40 mt-10 rounded-2xl bg-slate-100 py-10 dark:bg-[#111111] lg:sticky lg:mb-10">
         <SidebarNameProffesion
           avatarSrc={personalInfo.avatar}
           name={personalInfo.name}
-          profession={personalInfo.profession}
+          profession={capitalizeWords(t('myInfo.profession'))}
         ></SidebarNameProffesion>
         <SidebarSocialMedia links={socialMediaLinks} />
         <SidebarContactInfo items={contactItems} />
