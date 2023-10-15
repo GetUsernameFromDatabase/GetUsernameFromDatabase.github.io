@@ -17,7 +17,8 @@ const Header = () => {
   }
 
   return (
-    <header className="z-50 bg-gray-900 py-5 dark:bg-black max-lg:sticky  max-lg:top-0 lg:bg-transparent lg:py-12">
+    /** -top-1 is to mitigate fast scroll issue on mobile */
+    <header className="-top-1 z-50 m-0 bg-gray-900 py-5 dark:bg-black max-lg:sticky lg:bg-transparent lg:py-12">
       <div className="container grid grid-cols-[auto_1fr] items-center justify-between">
         <div>
           <a href="/">
