@@ -16,6 +16,7 @@ const SidebarContactInfo = ({
           className={`flex items-center gap-6 border-b border-slate-300 py-3`}
         >
           <div
+            /** //TODO: contact item on hover is misleading */
             className={cn(
               'hover:hover_active group flex h-10 w-10 cursor-pointer items-center justify-center rounded bg-light-gray text-xl shadow-md dark:bg-black',
               item.className,

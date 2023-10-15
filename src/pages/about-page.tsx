@@ -7,6 +7,7 @@ import type { AboutCardProperties } from '../components/about/about-card';
 import AboutGrid from '../components/about/about-grid';
 import ProgrammingLanguageSlider from '../components/programming-language-slider';
 
+// TODO: %2 amount of AboutCardProperties
 const aboutInfo: AboutCardProperties[] = [
   {
     title: 'Ui/Ux Design',

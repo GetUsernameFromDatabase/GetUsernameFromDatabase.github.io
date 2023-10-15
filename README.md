@@ -9,6 +9,8 @@ Todo List:
 - change the colours to something I like more -- teal, cyan
 - i18n module
 - do the todos scattered around the code
+- look over text size readability
+- populate
 
 ## Bootstrapped with React + TypeScript + Vite
 

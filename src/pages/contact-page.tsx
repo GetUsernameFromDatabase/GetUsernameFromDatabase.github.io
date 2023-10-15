@@ -3,6 +3,7 @@ import ContactInfo from '../components/contact/contact-info';
 import { personalInfo } from '../info';
 
 const ContactPage = () => {
+  // TODO: fix ` ` becoming + -- prolly url encoding issue
   return (
     <div className="mt-8 px-12 pt-16">
       <div>
