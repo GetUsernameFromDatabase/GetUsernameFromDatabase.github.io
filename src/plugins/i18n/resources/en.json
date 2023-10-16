@@ -1,5 +1,11 @@
 {
   "translation": {
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System",
+      "toggle-theme": "Toggle theme"
+    },
     "myInfo": {
       "profession": "software developer"
     },

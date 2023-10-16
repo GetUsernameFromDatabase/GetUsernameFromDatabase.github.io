@@ -1,5 +1,11 @@
 {
   "translation": {
+    "theme": {
+      "light": "Свет",
+      "dark": "Темный",
+      "system": "Система",
+      "toggle-theme": "Переключить тему"
+    },
     "myInfo": {
       "profession": "разработчик программного обеспечения"
     },

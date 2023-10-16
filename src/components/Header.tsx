@@ -1,5 +1,5 @@
 import NavigationMobile from './navigation/navigation-mobile';
-import ThemeChanger from './navigation/theme-changer';
+import ThemeChanger from './theme/theme-changer';
 
 const Header = () => {
   return (

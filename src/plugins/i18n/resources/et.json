@@ -1,5 +1,11 @@
 {
   "translation": {
+    "theme": {
+      "light": "Valgus",
+      "dark": "Tume",
+      "system": "Süsteem",
+      "toggle-theme": "Lülitage teema sisse"
+    },
     "myInfo": {
       "profession": "tarkvara arendaja"
     },

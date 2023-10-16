@@ -5,13 +5,13 @@ import './plugins/i18n';
 
 import App from './app.tsx';
 import './index.css';
-import { ThemeContextProvider } from './contexts/theme/theme-context-provider.tsx';
+import ThemeProvider from './components/theme/theme-provider.tsx';
 
 const root = createRoot(document.querySelector('#root')!);
 root.render(
   <StrictMode>
-    <ThemeContextProvider>
-      <App />{' '}
-    </ThemeContextProvider>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </StrictMode>,
 );
