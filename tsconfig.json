@@ -27,7 +27,7 @@
     "noFallthroughCasesInSwitch": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["src", "tools"],
+  "include": ["src", "tools", "@types"],
   "references": [{ "path": "./tsconfig.node.json" }],
 
   "ts-node": {

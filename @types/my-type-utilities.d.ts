@@ -1,4 +1,4 @@
-type FlattenKeys<T, P = ''> = {
+export type FlattenKeys<T, P = ''> = {
   [K in keyof T]: T[K] extends Record<string, unknown>
     ? K extends string
       ? `${P}${K}.${FlattenKeys<T[K]>}`
