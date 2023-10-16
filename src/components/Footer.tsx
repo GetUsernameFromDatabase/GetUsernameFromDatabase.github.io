@@ -13,6 +13,7 @@ const Footer = () => {
         >
           github
         </a>
+        <b className="ml-2">WORK IN PROGRESS</b>
       </p>
     </div>
   );
