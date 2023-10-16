@@ -8,7 +8,7 @@ import LayoutMain from './layouts/layout-main';
 function App() {
   return (
     <Router>
-      <main className="bg-[url('./images/bg-light.jpg')] dark:bg-[url('./images/bg-dark.jpg')]">
+      <main className="bg-[url('/images/bg-light.jpg')] dark:bg-[url('/images/bg-dark.jpg')]">
         <Header></Header>
         <div className="container mt-40 grid grid-cols-12 lg:gap-10">
           <Sidebar id="personal-info-sidebar"></Sidebar>
