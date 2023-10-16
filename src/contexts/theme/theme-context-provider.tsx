@@ -1,9 +1,10 @@
 import { useState } from 'react';
 
-import type { ThemeContextState } from '../../../@types/theme-context';
 import { userPrefersDarkMode } from '../../utils/browser-window';
 
 import { ThemeContext } from './theme-context-hook';
+
+import type { ThemeContextState } from '@type/my-types';
 
 interface ThemeContextProviderProperties {
   children: React.ReactNode;

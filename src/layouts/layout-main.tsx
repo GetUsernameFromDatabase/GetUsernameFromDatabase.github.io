@@ -10,7 +10,7 @@ const LayoutMain = () => {
       <div id="large-nav" className="-mt-10 hidden text-right lg:block">
         <NavigationMain></NavigationMain>
       </div>
-      <div className="mb-14 rounded-xl bg-slate-50 dark:bg-[#111111]">
+      <div className="mb-14 rounded-xl bg-background">
         <Outlet />
         <Footer />
       </div>

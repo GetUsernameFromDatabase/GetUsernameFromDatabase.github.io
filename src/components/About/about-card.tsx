@@ -1,6 +1,6 @@
 import type { IconType } from 'react-icons';
 
-import { cn } from '../../utils/classname-resolver';
+import { cn } from '@/lib/utils';
 
 export interface AboutCardProperties {
   icon: IconType;

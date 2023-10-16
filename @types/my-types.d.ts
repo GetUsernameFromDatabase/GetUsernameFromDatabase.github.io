@@ -14,3 +14,9 @@ export interface ContactItem {
   className: string;
   link?: string;
 }
+
+export type AvailableThemes = 'dark' | 'light';
+export interface ThemeContextState {
+  theme: AvailableThemes;
+  setTheme: React.Dispatch<React.SetStateAction<AvailableThemes>>;
+}

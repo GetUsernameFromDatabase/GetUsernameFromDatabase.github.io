@@ -10,13 +10,13 @@ const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
   const { t } = useTranslation();
   return (
     <form
-      className="mx-auto rounded-lg bg-white p-4 shadow-lg dark:bg-[#1f1f1f]"
+      className="mx-auto rounded-lg bg-primary-foreground p-4 shadow-lg"
       action={`mailto:${properties.recipientEmail}`}
     >
       <div className="mb-4">
         <label
           htmlFor="subject"
-          className="block text-sm font-semibold text-gray-700 dark:text-slate-100"
+          className="block text-sm font-semibold text-primary"
         >
           {t('forms.subject', { ns: 'common' })}:
         </label>
@@ -24,13 +24,13 @@ const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
           type="text"
           name="subject"
           required
-          className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:outline-none dark:bg-slate-200"
+          className="w-full rounded-md border border-primary/20 bg-input p-2 text-primary focus:border-blue-500 focus:outline-none"
         />
       </div>
       <div className="mb-4">
         <label
           htmlFor="body"
-          className="block text-sm font-semibold text-gray-700 dark:text-slate-100"
+          className="block text-sm font-semibold text-primary"
         >
           {t('forms.body', { ns: 'common' })}:
         </label>
@@ -38,13 +38,13 @@ const ContactViaMailForm: React.FC<ContactViaMailFormProperties> = ({
           id="body"
           name="body"
           required
-          className="h-32 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:outline-none dark:bg-slate-200"
+          className="h-32 w-full rounded-md border border-primary/20 bg-input p-2 text-primary focus:border-blue-500 focus:outline-none"
         />
       </div>
       <button
         type="submit"
         title={t('forms.send-email-tooltip', { ns: 'common' })}
-        className="w-full rounded-md bg-primary py-2 font-semibold text-white hover:bg-primary-dark hover:shadow-md focus:outline-none dark:bg-primary-dark dark:hover:bg-primary"
+        className=" w-full rounded-md bg-primary py-2 font-semibold text-secondary hover:bg-primary/80 hover:shadow-md focus:outline-none"
       >
         {t('forms.send-email', { ns: 'common' })}
       </button>

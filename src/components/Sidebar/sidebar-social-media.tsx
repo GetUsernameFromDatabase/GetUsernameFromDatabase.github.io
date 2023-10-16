@@ -1,5 +1,5 @@
-import type { SocialMediaLink } from '../../../@types/info';
-import { cn } from '../../utils/classname-resolver';
+import { cn } from '@/lib/utils';
+import type { SocialMediaLink } from '@type/my-types';
 
 interface SidebarSocialMediaProperties {
   links: Readonly<SocialMediaLink[]>;
@@ -15,7 +15,7 @@ const SidebarSocialMedia = ({
           key={index}
           href={item.link}
           className={cn(
-            'hover:hover_active flex h-10 w-10 items-center justify-center rounded bg-light-gray shadow-md hover:text-slate-50 dark:bg-mid-dark',
+            'flex h-10 w-10 items-center justify-center rounded bg-accent shadow-md hover:bg-accent/60',
             item.className,
           )}
           title={item.label}

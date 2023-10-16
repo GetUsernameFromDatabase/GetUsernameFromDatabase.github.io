@@ -63,26 +63,23 @@ const AboutPage = () => {
   return (
     <div className="mt-8 px-12 pt-16">
       <div>
-        <h2 className="after:contents[] relative -translate-y-1/2 font-roboto-slab text-4xl font-bold text-slate-900 after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-primary dark:text-slate-50">
+        <h2 className="after:contents[] font-roboto-slab relative -translate-y-1/2 text-4xl font-bold text-primary after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-accent">
           {capitalizeWords(t('about-me.title'))}
         </h2>
         <div className="space-y-2">
           {t('about-me.content', { returnObjects: true }).map((item, index) => (
-            <p
-              key={index}
-              className="font-medium leading-7 text-gray-700 dark:text-slate-400"
-            >
+            <p key={index} className="font-medium leading-7 text-primary/80">
               {item}
             </p>
           ))}
         </div>
       </div>
-      <h3 className="pb-4 pt-6 text-4xl font-semibold text-slate-900 dark:text-slate-50">
+      <h3 className="pb-4 pt-6 text-4xl font-semibold text-primary">
         {t('about-me.what-i-do.title')}
       </h3>
       <AboutGrid items={aboutInfo}></AboutGrid>
       <div>
-        <h3 className="pb-4 pt-6 text-4xl font-semibold text-slate-900 dark:text-slate-50">
+        <h3 className="pb-4 pt-6 text-4xl font-semibold text-primary">
           {t('about-me.languages-frameworks')}
         </h3>
         <ProgrammingLanguageSlider></ProgrammingLanguageSlider>

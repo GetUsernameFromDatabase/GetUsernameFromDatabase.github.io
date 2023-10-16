@@ -5,7 +5,7 @@ const Footer = () => {
   // TODO: 'footer' to use translation function -- goal is to just have t('footer') and give it the href
   return (
     <div className="mt-8 rounded-bl-xl rounded-br-xl p-6 text-center">
-      <p className="text-slate-800 dark:text-slate-50">
+      <p className="text-primary">
         {t('footer')}{' '}
         <a
           href="https://github.com/GetUsernameFromDatabase/GetUsernameFromDatabase.github.io"

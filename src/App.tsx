@@ -10,15 +10,18 @@ import { useThemeContext } from './contexts/theme/theme-context-hook';
 import LayoutMain from './layouts/layout-main';
 
 const backgroundImage: Record<AvailableThemes, string> = {
-  dark: 'bg-main-dark',
-  light: 'bg-main-light',
+  dark: "url('./images/bg-dark.jpg')",
+  light: "url('./images/bg-light.jpg')",
 };
 
 function App() {
   const { theme } = useThemeContext();
   return (
     <Router>
-      <main className={`${theme} ${backgroundImage[theme]}`}>
+      <main
+        className={`${theme}`}
+        style={{ backgroundImage: backgroundImage[theme] }}
+      >
         <Header></Header>
         <div className="container mt-40 grid grid-cols-12 lg:gap-10">
           <Sidebar id="personal-info-sidebar"></Sidebar>
