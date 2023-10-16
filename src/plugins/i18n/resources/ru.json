@@ -1,5 +1,11 @@
 {
   "translation": {
+    "languages": {
+      "available-languages": "Доступные языки",
+      "en": "Английский",
+      "et": "эстонский",
+      "ru": "Русский"
+    },
     "theme": {
       "light": "Свет",
       "dark": "Темный",

@@ -1,3 +1,4 @@
+import LanguageSwitcher from './navigation/language-switcher';
 import NavigationMobile from './navigation/navigation-mobile';
 import ThemeChanger from './theme/theme-changer';
 
@@ -12,6 +13,7 @@ const Header = () => {
           </a>
         </div>
         <div className="flex items-center justify-end gap-3 text-right">
+          <LanguageSwitcher></LanguageSwitcher>
           <ThemeChanger></ThemeChanger>
           <NavigationMobile></NavigationMobile>
         </div>

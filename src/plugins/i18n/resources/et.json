@@ -1,5 +1,11 @@
 {
   "translation": {
+    "languages": {
+      "available-languages": "Saadaolevad keeled",
+      "en": "Inglise",
+      "et": "eesti keel",
+      "ru": "vene keel"
+    },
     "theme": {
       "light": "Valgus",
       "dark": "Tume",

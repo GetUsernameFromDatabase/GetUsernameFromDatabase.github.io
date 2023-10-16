@@ -1,5 +1,11 @@
 {
   "translation": {
+    "languages": {
+      "available-languages": "Available languages",
+      "en": "English",
+      "et": "Estonian",
+      "ru": "Russian"
+    },
     "theme": {
       "light": "Light",
       "dark": "Dark",
