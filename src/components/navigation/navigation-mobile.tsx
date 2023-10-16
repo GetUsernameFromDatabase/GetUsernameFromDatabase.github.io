@@ -9,10 +9,12 @@ import { Button } from '../ui/button';
 
 import { cn } from '@/lib/utils';
 
+// TODO: replace this with https://ui.shadcn.com/docs/components/dropdown-menu
+
 const NavigationMobile = () => {
   const mainRoutesNavInfo = useMainRoutesNavInfo();
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="relative inline-block text-left lg:hidden">
       <Menu.Button as={Fragment}>
         {({ open }) => (
           <Button
@@ -46,7 +48,7 @@ const NavigationMobile = () => {
                 className={({ isActive }) =>
                   cn(
                     'group flex w-full items-center rounded-sm bg-secondary px-2 py-2 text-sm text-primary hover:bg-primary hover:text-secondary',
-                    { 'bg-primary text-secondary': isActive },
+                    { 'bg-primary/80 text-secondary': isActive },
                   )
                 }
               >
