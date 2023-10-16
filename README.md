@@ -15,6 +15,7 @@ TODO List:
   - works -- github repo links
   - resume -- duh
 - preload background images
+- lighthouse
 
 ## Bootstrapped with React + TypeScript + Vite
 
