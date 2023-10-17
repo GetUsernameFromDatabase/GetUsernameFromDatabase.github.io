@@ -5,13 +5,19 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 const slidesData = [
-  'https://www.python.org/static/img/python-logo.png',
-  '/images/java.png',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/320px-PHP-logo.svg.png',
-  '/images/csharp.svg',
   '/images/react.svg',
+  '/images/vue.png',
+  '/images/vite.png',
+  'https://nuts-agency.ru/upload/iblock/c98/c9879095ed083e4a3076480c3573b87f.png',
+  'https://res.cloudinary.com/practicaldev/image/fetch/s--m_Ng9MLF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/fppjegg7q1kb2pdzmlvf.png',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/320px-Nextjs-logo.svg.png',
+  'https://www.python.org/static/img/python-logo.png',
+  'https://www.creative-tim.com/blog/content/images/wordpress/2020/03/node-js-736399_1280.png',
+  '/images/java.png',
+  '/images/csharp.svg',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/320px-PHP-logo.svg.png',
   'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/320px-HTML5_logo_and_wordmark.svg.png',
-  // TODO: populate this properly
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/95px-CSS3_logo_and_wordmark.svg.png',
 ];
 
 const ProgrammingLanguageSlider = () => {
