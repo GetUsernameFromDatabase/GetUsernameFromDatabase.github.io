@@ -14,7 +14,7 @@ const NavigationMain = () => {
           to={navInfo.to}
           className={({ isActive }) =>
             cn(
-              'text-1xl flex w-20 flex-col items-center justify-center rounded-xl bg-secondary py-4 text-primary hover:bg-primary hover:text-secondary',
+              'text-1xl flex w-20 flex-col items-center justify-center rounded-xl bg-secondary py-4 text-center text-primary hover:bg-primary hover:text-secondary',
               { 'bg-primary/80 text-secondary': isActive },
             )
           }
