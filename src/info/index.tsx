@@ -1,4 +1,5 @@
 // as index.ts so I can segment it if it gets too long or I'd like another use for info
+import { DateTime } from 'luxon';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { BiMap } from 'react-icons/bi';
 import { BsGithub, BsJournalText, BsTelephoneOutbound } from 'react-icons/bs';
@@ -13,7 +14,7 @@ export const personalInfo = {
   email: 'rkruberg@gmail.com',
   location: 'Estonia/Tartu',
   phone: '+372 5388 9416',
-  birthday: 'July 25, 2001', // TODO: make this into a date object
+  birthday: DateTime.fromISO('2001-07-25'),
   linkedin: 'https://www.linkedin.com/in/ryan-murulo-415852147/',
   facebook: 'https://www.facebook.com/Ryanuskas/',
   github: 'https://github.com/GetUsernameFromDatabase',
@@ -71,7 +72,7 @@ export const contactItems: Readonly<ContactItem[]> = [
   {
     label: 'Birthday',
     icon: AiOutlineCalendar,
-    value: personalInfo.birthday,
+    value: personalInfo.birthday.toLocaleString(),
     className: 'text-[#C17CEB]',
   },
 ] as const;
