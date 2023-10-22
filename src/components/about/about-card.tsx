@@ -1,5 +1,7 @@
 import type { IconType } from 'react-icons';
 
+import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card';
+
 import { cn } from '@/lib/utils';
 
 export interface AboutCardProperties {
@@ -9,21 +11,22 @@ export interface AboutCardProperties {
   iconClassName?: string;
 }
 
+// Maybe at some point change to AboutWhatIDoCard orsm
 const AboutCard: React.FC<AboutCardProperties> = ({ ...properties }) => {
   return (
-    <div className="flex gap-5 rounded-md border border-slate-200 p-4 dark:border-slate-800">
-      {properties.icon({
-        className: cn('h-28 w-28', properties.iconClassName),
-      })}
-      <div>
-        <h4 className="text-xl font-semibold dark:text-white">
-          {properties.title}
-        </h4>
-        <p className="text-gray-lite leading-8 dark:text-[#A6A6A6]">
-          {properties.description}
-        </p>
-      </div>
-    </div>
+    <Card>
+      <CardHeader className="">
+        <div className="space-y-1">
+          <CardTitle className="flex items-center">
+            {properties.icon({
+              className: cn('mr-1', properties.iconClassName),
+            })}
+            {properties.title}
+          </CardTitle>
+          <CardDescription>{properties.description}</CardDescription>
+        </div>
+      </CardHeader>
+    </Card>
   );
 };
 
