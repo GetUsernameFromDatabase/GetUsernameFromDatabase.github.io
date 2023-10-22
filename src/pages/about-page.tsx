@@ -8,6 +8,9 @@ import AboutGrid from '../components/about/about-grid';
 import ProgrammingLanguageSlider from '../components/programming-language-slider';
 import { capitalizeWords } from '../utils/string-manipulation';
 
+import PageSection from '@/components/page/page-section';
+import PageWrapper from '@/components/page/page-wrapper';
+
 const AboutPage = () => {
   const { t } = useTranslation();
   const aboutInfo: AboutCardProperties[] = [
@@ -61,11 +64,8 @@ const AboutPage = () => {
     },
   ];
   return (
-    <div className="mt-8 px-12 pt-16">
+    <PageWrapper title={capitalizeWords(t('about-me.title'))}>
       <div>
-        <h2 className="after:contents[] font-roboto-slab relative -translate-y-1/2 text-4xl font-bold text-primary after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-accent">
-          {capitalizeWords(t('about-me.title'))}
-        </h2>
         <div className="space-y-2">
           {t('about-me.content', { returnObjects: true }).map((item, index) => (
             <p key={index} className="font-medium leading-7 text-primary/80">
@@ -74,17 +74,16 @@ const AboutPage = () => {
           ))}
         </div>
       </div>
-      <h3 className="pb-4 pt-6 text-4xl font-semibold text-primary">
-        {t('about-me.what-i-do.title')}
-      </h3>
-      <AboutGrid items={aboutInfo}></AboutGrid>
-      <div>
-        <h3 className="pb-4 pt-6 text-4xl font-semibold text-primary">
-          {t('about-me.languages-frameworks')}
-        </h3>
+      <PageSection title={t('about-me.what-i-do.title')} rootClassName="pt-6">
+        <AboutGrid items={aboutInfo}></AboutGrid>
+      </PageSection>
+      <PageSection
+        title={t('about-me.languages-frameworks')}
+        rootClassName="pt-6"
+      >
         <ProgrammingLanguageSlider></ProgrammingLanguageSlider>
-      </div>
-    </div>
+      </PageSection>
+    </PageWrapper>
   );
 };
 

@@ -6,6 +6,10 @@ import ResumeItem, {
 import ResumeKnowledgeItem from '../components/resume/resume-knowledge-item';
 import ResumeSkillItem from '../components/resume/resume-skill-item';
 
+import PageSection from '@/components/page/page-section';
+import PageWrapper from '@/components/page/page-wrapper';
+import { capitalizeWords } from '@/utils/string-manipulation';
+
 const educationData: ResumeItemProperties[] = [
   {
     date: '2021-2023',
@@ -83,55 +87,43 @@ const knowledgeLabels = [
 ] as const;
 
 const ResumePage = () => {
-  const sectionStyles = 'text-3xl dark:text-white font-medium pb-6';
   const { t } = useTranslation();
 
   return (
-    <div className="mt-8 px-12 pt-16">
-      <h2 className="after:contents[] font-roboto-slab relative -translate-y-1/2 text-4xl font-bold text-primary after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-primary">
-        {t('resume-page.title')}
-      </h2>
+    <PageWrapper title={capitalizeWords(t('resume-page.title'))}>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <div>
-          <h3 className={sectionStyles}>{t('resume-page.experience')}</h3>
+        <PageSection title={t('resume-page.experience')}>
           <div className="grid grid-cols-1 gap-6">
             {experienceData.map((item, index) => (
               <ResumeItem key={index} {...item} />
             ))}
           </div>
-        </div>
-        <div>
-          <h3 className={sectionStyles}>{t('resume-page.education')}</h3>
+        </PageSection>
+        <PageSection title={t('resume-page.education')}>
           <div className="grid grid-cols-1 gap-6">
             {educationData.map((item, index) => (
               <ResumeItem key={index} {...item} />
             ))}
           </div>
-        </div>
+        </PageSection>
       </div>
       <div className="grid grid-cols-1 gap-6 pt-4 lg:grid-cols-2 lg:pt-12">
-        <div>
-          <h3 className="pb-8 text-3xl font-medium dark:text-white">
-            {t('resume-page.working-skills')}
-          </h3>
+        <PageSection title={t('resume-page.working-skills')}>
           <div className="skill_items rounded-md bg-primary-foreground">
             {skillData.map((item, index) => (
               <ResumeSkillItem key={index} {...item} />
             ))}
           </div>
-        </div>
-        <div>
-          <h3 className="pb-8 text-3xl font-medium dark:text-white">
-            {t('resume-page.knowledges')}
-          </h3>
+        </PageSection>
+        <PageSection title={t('resume-page.knowledges')}>
           <div className="flex flex-wrap gap-4">
             {knowledgeLabels.map((label, index) => (
               <ResumeKnowledgeItem key={index} label={label} />
             ))}
           </div>
-        </div>
+        </PageSection>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

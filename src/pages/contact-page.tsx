@@ -4,16 +4,13 @@ import ContactViaMailForm from '../components/contact/contact-form';
 import ContactInfo from '../components/contact/contact-info';
 import { personalInfo } from '../info';
 
+import PageWrapper from '@/components/page/page-wrapper';
+import { capitalizeWords } from '@/utils/string-manipulation';
+
 const ContactPage = () => {
-  // TODO: fix ` ` becoming + -- prolly url encoding issue
   const { t } = useTranslation();
   return (
-    <div className="mt-8 px-12 pt-16">
-      <div>
-        <h2 className="after:contents[] font-roboto-slab relative -translate-y-1/2 text-4xl font-bold text-primary after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-primary">
-          {t('contact-page.title')}
-        </h2>
-      </div>
+    <PageWrapper title={capitalizeWords(t('contact-page.title'))}>
       <ContactInfo
         phone={personalInfo.phone}
         email={personalInfo.email}
@@ -27,7 +24,7 @@ const ContactPage = () => {
           recipientEmail={personalInfo.email}
         ></ContactViaMailForm>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

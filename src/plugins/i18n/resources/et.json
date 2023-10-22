@@ -1,5 +1,9 @@
 {
   "translation": {
+    "404": {
+      "title": "404 Lehekülge ei leitud",
+      "description": "Lehte, millele proovite navigeerida, pole olemas"
+    },
     "languages": {
       "available-languages": "Saadaolevad keeled",
       "en": "Inglise",
@@ -48,7 +52,7 @@
           "title": "Andmebaas",
           "description": [
             "Taustaprogrammiga töötamine nõuab tavaliselt ka andmete salvestamist",
-            "Nii et andmete töötlemise/salvestuse osas olen saanud kogemusi SQL-iga (Postgres, Oracle, MySQL, SQLite)"
+            "Nii et andmete töötlemise/salvestuse osas on mul kogemusi SQL-iga (Postgres, Oracle, MySQL, SQLite)"
           ]
         },
         "dev-ops": {

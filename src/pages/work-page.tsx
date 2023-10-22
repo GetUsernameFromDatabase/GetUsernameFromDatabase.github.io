@@ -1,16 +1,13 @@
 import { useTranslation } from 'react-i18next';
 
+import PageWrapper from '@/components/page/page-wrapper';
+import { capitalizeWords } from '@/utils/string-manipulation';
+
 const Work = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-8 px-12 pt-16">
-      <div>
-        <h2 className="after:contents[] font-roboto-slab relative -translate-y-1/2 text-4xl font-bold text-primary after:absolute after:left-52 after:right-8 after:top-1/2 after:h-[2px] after:w-36 after:bg-primary">
-          {t('work-page.title')}
-        </h2>
-      </div>
-    </div>
+    <PageWrapper title={capitalizeWords(t('work-page.title'))}></PageWrapper>
   );
 };
 

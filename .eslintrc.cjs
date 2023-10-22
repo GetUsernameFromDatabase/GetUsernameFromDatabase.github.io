@@ -3,7 +3,7 @@
 const config = {
   root: true,
   env: { browser: true, es2020: true },
-  ignorePatterns: ['dist'],
+  ignorePatterns: ['dist', 'node_modules'],
   parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',

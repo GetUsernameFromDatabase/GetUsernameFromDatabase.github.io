@@ -7,7 +7,6 @@ Goal of it is to let people know more about me.
 TODO List:
 
 - theme -- change the colours to something I like more (teal, cyan)
-- i18n module -- currently just language change button
 - typography -- look over text size readability
 - do the todos scattered around the code
 - populate
@@ -16,6 +15,7 @@ TODO List:
   - resume -- duh
 - preload background images
 - lighthouse
+- refactor i18n -- transpile and stuff like that
 
 ## Bootstrapped with React + TypeScript + Vite
 

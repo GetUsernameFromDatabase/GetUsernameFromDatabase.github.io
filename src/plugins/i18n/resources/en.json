@@ -85,7 +85,11 @@
     "work-page": {
       "title": "Work"
     },
-    "footer": "View Source Code on"
+    "footer": "View Source Code on",
+    "404": {
+      "title": "404 Page not found",
+      "description": "The page you are trying to navigate to does not exist"
+    }
   },
   "common": {
     "forms": {
