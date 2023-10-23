@@ -17,6 +17,7 @@ declare module 'i18next' {
 export type AvailableLanguage = keyof typeof resources;
 export type DefaultTranslationResource = typeof resources.en;
 
+// TODO: I would like to make these types better -- more harmonious with i18n
 export type TranslationNsKeys = FlattenKeys<typeof resources.en.translation>;
 export type CommonNsKeys = FlattenKeys<typeof resources.en.common>;
 

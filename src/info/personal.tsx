@@ -6,7 +6,7 @@ import { BsGithub, BsJournalText, BsTelephoneOutbound } from 'react-icons/bs';
 import { FaFacebookF, FaHackerrank } from 'react-icons/fa';
 import { RiLinkedinFill } from 'react-icons/ri';
 
-import type { ContactItem, SocialMediaLink } from '../../@types/my-types';
+import type { ContactItem, SocialMediaLink } from '@type/my-types';
 
 export const personalInfo = {
   name: 'Ryan Murulo',

@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import { useMainRoutesNavInfo } from '../../configuration/routes';
-
+import { useMainRoutesNavInfo } from '@/configuration/routes';
 import { cn } from '@/lib/utils';
 
 const NavigationMain = () => {

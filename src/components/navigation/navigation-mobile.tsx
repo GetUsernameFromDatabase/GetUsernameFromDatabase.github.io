@@ -4,9 +4,9 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-import { useMainRoutesNavInfo } from '../../configuration/routes';
 import { Button } from '../ui/button';
 
+import { useMainRoutesNavInfo } from '@/configuration/routes';
 import { cn } from '@/lib/utils';
 
 // TODO: replace this with https://ui.shadcn.com/docs/components/dropdown-menu

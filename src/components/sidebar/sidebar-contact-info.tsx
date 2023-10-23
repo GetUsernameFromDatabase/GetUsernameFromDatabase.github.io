@@ -1,5 +1,4 @@
-import type { contactItems } from '../../info';
-
+import type { contactItems } from '@/info/personal';
 import { cn } from '@/lib/utils';
 
 interface SidebarContactInfoProperties {

@@ -3,13 +3,12 @@ import { BiServer } from 'react-icons/bi';
 import { BsCodeSlash, BsFillPhoneFill } from 'react-icons/bs';
 import { FaCogs, FaDatabase, FaTools } from 'react-icons/fa';
 
-import type { AboutCardProperties } from '../components/about/about-card';
-import AboutGrid from '../components/about/about-grid';
-import ProgrammingLanguageSlider from '../components/programming-language-slider';
-import { capitalizeWords } from '../utils/string-manipulation';
-
+import type { AboutCardProperties } from '@/components/about/about-card';
+import AboutGrid from '@/components/about/about-grid';
+import ProgrammingLanguageSlider from '@/components/about/programming-language-slider';
 import PageSection from '@/components/page/page-section';
 import PageWrapper from '@/components/page/page-wrapper';
+import { capitalizeWords } from '@/utils/string-manipulation';
 
 const AboutPage = () => {
   const { t } = useTranslation();
