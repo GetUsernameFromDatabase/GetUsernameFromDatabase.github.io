@@ -12,9 +12,6 @@
       "system": "System",
       "toggle-theme": "Toggle theme"
     },
-    "myInfo": {
-      "profession": "software developer"
-    },
     "about-me": {
       "title": "About Me",
       "content": [
@@ -77,8 +74,13 @@
     },
     "resume-page": {
       "title": "Resume",
-            "experience": "Experience",
-      "education": "Education",
+      "experience": {
+        "title": "Experience",
+        "description": "My work experience"
+      },
+      "education": {
+        "title": "Education"
+      },
       "working-skills": "Working Skills",
       "knowledges": "Knowledges"
     },
@@ -89,7 +91,73 @@
     "404": {
       "title": "404 Page not found",
       "description": "The page you are trying to navigate to does not exist"
-    }
+    },
+    "work": {
+      "positions": {
+        "software-developer": "Software Developer",
+        "full-stack-developer": "Full-Stack Developer"
+      },
+      "types": {
+        "contract": "Contract",
+        "full-time": "Full-Time",
+        "internship": "Internship"
+      },
+      "descriptions": {
+        "0": [
+          "Developed website to show on TV with PHP, HTML, JavaScript\n",
+
+          "Using Microsoft Power Automate and Microsoft Power apps",
+          "I developed applications for generating work documents that:",
+          "- employees can easily fill in and sign",
+          "- input information gets formatted using a template (Word, Excel -- online variant)",
+          "- if needed javascript is run on Excel to account for MS Power Apps/Power Automate online version limitations.",
+          "- which then gets converted into a pdf"
+        ],
+        "1": [
+          "Added a feature to to notify workers of events on my previously built website",
+          "Made a desktop application that can be used to easily configure the config file"
+        ],
+        "2": [
+          "Worked with Oracle database and PLSQL.\n",
+
+          "Developed a new version of intranet using Nuxt.js\n",
+
+          "Created a new interface for inputting data (frontend), generic system for data validation (backend).\n",
+
+          "Created a python script that generates html and javascript content that can be used in the backend (PHP) to serve serve content.",
+          "Essentially a way to:",
+          "- quickly develop how the frontend would look like",
+          "- ensure coupled systems work together (id for an element can be in one place and will propagate to HTML, JavaScript)"
+        ],
+        "3": [
+          "Managing a Package Manager/Server Updater project that (Java, Delphi, React):",
+          "- Makes sure customer packages are up to date -- Auto Deployment",
+          "- Installation of packages along with conflict resolution, dependancy management",
+
+          "\nWorking on intranet (written in Delphi, HTML, JavaScript) which is used for:",
+          "- package management -- compilation, hotfixes, source overview, auto deployment",
+          "- customer management -- customer services, licencing",
+          "- employee tools -- tasks, roles, permissions, vacations, timeclock",
+          "- statistics -- various statistics that help to manage/know the state of things",
+
+          "\nWorking on other projects where my expertise has been needed:",
+          "- Single Sign On project",
+          "- - communication layer between auth0 and raintree (deployed on AWS)",
+          "- - frontend -- liquid templating language, html, javascript",
+
+          "\nPython script that creates a folder to store all information related to task -- to better organize tasks:",
+          "- intranet task url, jira task url",
+          "- readme template",
+          "- vsc workspace folders that is related to ask",
+
+          "\nHouse App that uses Nuxt.js (TypeScript, vue, nitro). Used to:",
+          "- view front/back door cameras",
+          "- open door",
+          "- view where people are located at"
+        ]
+      }
+    },
+    "till-now": "till now"
   },
   "common": {
     "forms": {
@@ -98,6 +166,8 @@
       "send-email": "Send Email",
       "send-email-tooltip": "This forwards you to your systems e-mail application"
     },
-    "download-cv": "Download CV"
+    "download-cv": "Download CV",
+    "see-more": "see more",
+    "see-less": "see less"
   }
 }

@@ -16,9 +16,6 @@
       "system": "Süsteem",
       "toggle-theme": "Lülitage teema sisse"
     },
-    "myInfo": {
-      "profession": "tarkvara arendaja"
-    },
     "about-me": {
       "title": "Minust",
       "content": [
@@ -81,15 +78,78 @@
     },
     "resume-page": {
       "title": "Jätka",
-      "experience": "Kogemused",
-      "education": "Haridus",
+      "experience": {
+        "title": "Kogemused",
+        "description": "Minu töökogemus"
+      },
+      "education": {
+        "title": "Haridus"
+      },
       "working-skills": "Tööoskused",
       "knowledges": "Teadmised"
     },
     "work-page": {
       "title": "Töö"
     },
-    "footer": "Vaadake lähtekoodi sisse"
+    "footer": "Vaadake lähtekoodi sisse",
+    "work": {
+      "positions": {
+        "software-developer": "Tarkvara arendaja",
+        "full-stack-developer": "Full-stacki arendaja"
+      },
+      "types": {
+        "contract": "Leping",
+        "full-time": "Täiskohaga",
+        "internship": "Praktika"
+      },
+      "descriptions": {
+        "0": [
+          "Arendatud veebisait teleris näitamiseks PHP, HTML, JavaScriptiga",
+          "Microsoft Power Automate'i ja Microsoft Poweri rakenduste kasutamine",
+          "Töötasin välja rakendused töödokumentide genereerimiseks, mis:",
+          "- töötajad saavad hõlpsasti täita ja allkirjastada",
+          "- sisendteave vormindatakse malli abil (Word, Excel – võrguvariant)",
+          "- vajadusel käivitatakse javascript Excelis, et võtta arvesse MS Power Appsi/Power Automate'i võrguversiooni piiranguid.",
+          "- mis seejärel teisendatakse pdf-iks"
+        ],
+        "1": [
+          "Lisasin funktsiooni töötajate teavitamiseks sündmustest minu varem loodud veebisaidil",
+          "Tegi töölauarakenduse, mille abil saab hõlpsasti seadistada konfiguratsioonifaili"
+        ],
+        "2": [
+          "Töötas Oracle'i andmebaasi ja PLSQL-iga.",
+          "Töötas välja uue sisevõrgu versiooni Nuxt.js-i abil",
+          "Loodud uus liides andmete sisestamiseks (frontend), üldine süsteem andmete valideerimiseks (taustaprogramm).",
+          "Loodud pythoni skript, mis genereerib html- ja javascripti sisu, mida saab taustaprogrammis (PHP) kasutada sisu teenindamiseks.",
+          "Põhimõtteliselt viis, kuidas:",
+          "- töötage kiiresti välja, kuidas frontend välja näeks",
+          "- tagage ühendatud süsteemide koos töötamine (elemendi ID võib olla ühes kohas ja levib HTML-i, JavaScripti)"
+        ],
+        "3": [
+          "Paketihalduri/serverivärskendusprojekti haldamine, mis (Java, Delphi, React):",
+          "- Veenduge, et kliendipaketid oleksid ajakohased - automaatne juurutamine",
+          "- Pakettide installimine koos konfliktide lahendamise, sõltuvuse haldamisega",
+          "Sisevõrgus töötamine (kirjutatud Delphis, HTML-is, JavaScriptis), mida kasutatakse:",
+          "- paketihaldus - kompileerimine, kiirparandused, allika ülevaade, automaatne juurutamine",
+          "- kliendihaldus - klienditeenindus, litsentsimine",
+          "- töötajate tööriistad - ülesanded, rollid, load, puhkused, kellaaeg",
+          "- statistika -- mitmesugune statistika, mis aitab asjade seisu juhtida/teada",
+          "Töötamine muude projektidega, kus minu teadmisi on vaja olnud:",
+          "- Ühekordse sisselogimise projekt",
+          "- - sidekiht auth0 ja raintree vahel (juurutatud AWS-is)",
+          "-- frontend -- vedel mallikeel, html, javascript",
+          "Pythoni skript, mis loob kausta kogu ülesandega seotud teabe salvestamiseks – ülesannete paremaks korraldamiseks:",
+          "- sisevõrgu ülesande URL, jira ülesande URL",
+          "- lugemise mall",
+          "- vsc tööruumi kaustad, mis on seotud küsimusega",
+          "House App, mis kasutab Nuxt.js-i (TypeScript, vue, nitro). Harjunud:",
+          "- esi-/tagaukse kaamerate vaatamine",
+          "- avatud uks",
+          "- vaadata, kus inimesed asuvad"
+        ]
+      }
+    },
+    "till-now": "praeguseni"
   },
   "common": {
     "forms": {
@@ -98,6 +158,8 @@
       "send-email": "Saada email",
       "send-email-tooltip": "See suunab teid teie süsteemi e-posti rakendusse"
     },
-    "download-cv": "Laadige alla CV"
+    "download-cv": "Laadige alla CV",
+    "see-more": "näe rohkem",
+    "see-less": "näe vähem"
   }
 }

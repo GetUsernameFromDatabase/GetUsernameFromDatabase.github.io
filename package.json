@@ -18,6 +18,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "defu": "^6.1.2",
     "i18next": "^23.5.1",
     "lucide-react": "^0.287.0",
     "luxon": "^3.4.3",

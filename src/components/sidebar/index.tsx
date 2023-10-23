@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
 
-import { contactItems, personalInfo, socialMediaLinks } from '../../info';
-import { capitalizeWords } from '../../utils/string-manipulation';
-
 import SidebarContactInfo from './sidebar-contact-info';
 import SidebarCvDownload from './sidebar-cv-download';
 import SidebarNameProffesion from './sidebar-person-info';
 import SidebarSocialMedia from './sidebar-social-media';
+
+import { contactItems, personalInfo, socialMediaLinks } from '@/info/personal';
+import { capitalizeWords } from '@/utils/string-manipulation';
 
 interface SidebarProperties {
   id: string;
@@ -20,7 +20,7 @@ const Sidebar = ({ id }: SidebarProperties) => {
         <SidebarNameProffesion
           avatarSrc={personalInfo.avatar}
           name={personalInfo.name}
-          profession={capitalizeWords(t('myInfo.profession'))}
+          profession={capitalizeWords(t('work.positions.full-stack-developer'))}
         ></SidebarNameProffesion>
         <SidebarSocialMedia links={socialMediaLinks} />
         <SidebarContactInfo items={contactItems} />
