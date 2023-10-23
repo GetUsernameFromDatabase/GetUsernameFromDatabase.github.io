@@ -30,7 +30,6 @@ const ResumeItem: React.FC<ResumeItemProperties> = ({
   const [showSeeAllButton, setShowSeeAllButton] = React.useState(false);
 
   React.useEffect(() => {
-    console.log(window.innerWidth);
     if (!descriptionReference.current) return setShowSeeAllButton(false);
     const { clientHeight, scrollHeight } = descriptionReference.current;
     return setShowSeeAllButton(clientHeight < scrollHeight || seeAll);
@@ -47,10 +46,7 @@ const ResumeItem: React.FC<ResumeItemProperties> = ({
   const dateDuration = (properties.end_date ?? DateTime.now())
     .diff(properties.start_date)
     .rescale();
-  /** Date duration with only year, months */
   const skimmedDateDuration = getSkimmedDuration(dateDuration);
-  console.info('--------');
-  console.log(skimmedDateDuration);
 
   return (
     <div
