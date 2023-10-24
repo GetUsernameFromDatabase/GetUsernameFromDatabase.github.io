@@ -9,22 +9,35 @@ import { RiLinkedinFill } from 'react-icons/ri';
 import type { ContactItem, SocialMediaLink } from '@type/my-types';
 
 export const personalInfo = {
-  name: 'Ryan Murulo',
+  names: {
+    current: 'Ryan Murulo',
+    previous: 'Ryan Kruberg',
+    linkedin: 'ryan-murulo-415852147',
+    facebook: 'Ryanuskas',
+    github: 'GetUsernameFromDatabase',
+    hackerrank: 'rkruberg',
+  },
   nameBefore: 'Ryan Kruberg', // TODO: use this
   avatar: 'https://avatars.githubusercontent.com/u/49920260?v=4',
   email: 'rkruberg@gmail.com',
   location: 'Estonia/Tartu',
   phone: '+372 5388 9416',
   birthday: DateTime.fromISO('2001-07-25'),
-  linkedin: 'https://www.linkedin.com/in/ryan-murulo-415852147',
-  facebook: 'https://www.facebook.com/Ryanuskas/',
-  github: 'https://github.com/GetUsernameFromDatabase',
-  hackerrank: 'https://www.hackerrank.com/rkruberg',
 } as const;
 
-export const linkedInLinks = {
-  certifications: `${personalInfo.linkedin}/details/certifications/`,
-  skills: `${personalInfo.linkedin}/details/skills/`,
+const myRootLinks = {
+  linkedin: `https://www.linkedin.com/in/${personalInfo.names.linkedin}`,
+} as const;
+
+export const linksConnectedToMe = {
+  linkedIn: {
+    main: myRootLinks.linkedin,
+    certifications: `${myRootLinks.linkedin}/details/certifications/`,
+    skills: `${myRootLinks.linkedin}/details/skills/`,
+  },
+  facebook: 'https://www.facebook.com/Ryanuskas',
+  github: `https://github.com/${personalInfo.names.github}`,
+  hackerrank: `https://www.hackerrank.com/${personalInfo.names.hackerrank}`,
 } as const;
 
 export const socialMediaLinks: Readonly<SocialMediaLink[]> = [
@@ -32,25 +45,25 @@ export const socialMediaLinks: Readonly<SocialMediaLink[]> = [
     label: 'Facebook',
     icon: FaFacebookF,
     className: 'text-[#1773EA]',
-    link: personalInfo.facebook,
+    link: linksConnectedToMe.facebook,
   },
   {
     label: 'GitHub',
     icon: BsGithub,
     className: 'text-[#2e3440]',
-    link: personalInfo.github,
+    link: linksConnectedToMe.github,
   },
   {
     label: 'HackerRank',
     icon: FaHackerrank,
     className: 'text-[#32c766]',
-    link: personalInfo.hackerrank,
+    link: linksConnectedToMe.hackerrank,
   },
   {
     label: 'LinkedIn',
     icon: RiLinkedinFill,
     className: 'text-[#0072b1]',
-    link: personalInfo.linkedin,
+    link: linksConnectedToMe.linkedIn.main,
   },
 ];
 

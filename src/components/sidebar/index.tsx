@@ -19,7 +19,7 @@ const Sidebar = ({ id }: SidebarProperties) => {
       <div className="left-0 top-40 mt-10 rounded-2xl bg-background py-10  lg:sticky lg:mb-10">
         <SidebarNameProffesion
           avatarSrc={personalInfo.avatar}
-          name={personalInfo.name}
+          name={personalInfo.names.current}
           profession={capitalizeWords(t('work.positions.full-stack-developer'))}
         ></SidebarNameProffesion>
         <SidebarSocialMedia links={socialMediaLinks} />
