@@ -1,14 +1,17 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-import ResumeKnowledgeItem from '../components/resume/resume-knowledge-item';
 import ResumeSkillItem from '../components/resume/resume-skill-item';
 
 import PageSection from '@/components/page/page-section';
 import PageWrapper from '@/components/page/page-wrapper';
 import ResumeCard from '@/components/resume/resume-card';
 import ResumeItem from '@/components/resume/resume-item';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { myEducation } from '@/info/education';
 import { myJobExperiences } from '@/info/experiences';
+import { myKnowledges } from '@/info/knowledge';
 import { capitalizeWords } from '@/utils/string-manipulation';
 
 // TODO: would like to bypass tailwind limitation percentage
@@ -34,15 +37,6 @@ const skillData = [
     percentage: 75,
     className: 'after:bg-purple-400 after:w-[75%]',
   },
-] as const;
-
-const knowledgeLabels = [
-  'Digital Design',
-  'Marketing',
-  'Social Media',
-  'Print',
-  'Time Management',
-  'Flexibility',
 ] as const;
 
 const ResumePage = () => {
@@ -104,11 +98,18 @@ const ResumePage = () => {
           </div>
         </PageSection>
         <PageSection title={t('resume-page.knowledges')}>
-          <div className="flex flex-wrap gap-4">
-            {knowledgeLabels.map((label, index) => (
-              <ResumeKnowledgeItem key={index} label={label} />
+          <div>
+            {myKnowledges.map((item, index) => (
+              <Badge key={index} className="m-1">
+                {item}
+              </Badge>
             ))}
           </div>
+          <Button variant="link" asChild>
+            <Link to="https://www.linkedin.com/in/ryan-murulo-415852147/details/skills/">
+              {t('see-more-on', { ns: 'common' })} linkedIn
+            </Link>
+          </Button>
         </PageSection>
       </div>
     </PageWrapper>

@@ -5,6 +5,10 @@ import path from 'node:path';
 
 import translate from 'translate';
 
+// TODO: find out a way to have Trans Component fully working with this
+// Currently {{}} seems to work fine but <l> gets wiped out
+// https://react.i18next.com/latest/trans-component
+
 interface LocaleFile {
   path: string;
   lang: string;

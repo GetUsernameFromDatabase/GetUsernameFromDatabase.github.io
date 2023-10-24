@@ -1,0 +1,15 @@
+export const myKnowledges = [
+  'TypeScript',
+  'React',
+  'Node.js',
+  'C#',
+  'Java',
+  'Nuxt.js',
+  'Delphi',
+  'PHP',
+  'JavaScript',
+  'MySQL',
+  'Linux',
+  'Oracle SQL',
+  'CSS',
+];
