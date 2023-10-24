@@ -8,8 +8,9 @@ import {
 
 export interface ResumeCardProperties {
   title: string;
-  description: string;
-  iconClassName?: string;
+  description?: string;
+  rootClassName?: string;
+  cardHeaderClassName?: string;
   cardContentClassName?: string;
   children?: React.ReactNode;
 }
@@ -17,10 +18,12 @@ export interface ResumeCardProperties {
 // Maybe at some point change to AboutWhatIDoCard orsm
 const ResumeCard: React.FC<ResumeCardProperties> = ({ ...properties }) => {
   return (
-    <Card>
-      <CardHeader>
+    <Card className={properties.rootClassName}>
+      <CardHeader className={properties.cardHeaderClassName}>
         <CardTitle className="flex items-center">{properties.title}</CardTitle>
-        <CardDescription>{properties.description}</CardDescription>
+        {properties.description && (
+          <CardDescription>{properties.description}</CardDescription>
+        )}
       </CardHeader>
       <CardContent className={properties.cardContentClassName}>
         {properties.children}
