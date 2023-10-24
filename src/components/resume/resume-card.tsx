@@ -10,6 +10,7 @@ export interface ResumeCardProperties {
   title: string;
   description: string;
   iconClassName?: string;
+  cardContentClassName?: string;
   children?: React.ReactNode;
 }
 
@@ -21,7 +22,9 @@ const ResumeCard: React.FC<ResumeCardProperties> = ({ ...properties }) => {
         <CardTitle className="flex items-center">{properties.title}</CardTitle>
         <CardDescription>{properties.description}</CardDescription>
       </CardHeader>
-      <CardContent>{properties.children}</CardContent>
+      <CardContent className={properties.cardContentClassName}>
+        {properties.children}
+      </CardContent>
     </Card>
   );
 };

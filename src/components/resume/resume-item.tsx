@@ -51,7 +51,7 @@ const ResumeItem: React.FC<ResumeItemProperties> = ({
   return (
     <div
       className={cn(
-        'mb-6 space-y-2 whitespace-pre-line rounded-lg py-4 pl-5 pr-3 dark:border-2 dark:border-[#212425]',
+        'space-y-2 whitespace-pre-line rounded-lg py-4 pl-5 pr-3',
         className,
       )}
     >

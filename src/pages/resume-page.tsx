@@ -54,6 +54,7 @@ const ResumePage = () => {
         <ResumeCard
           title={t('resume-page.experience.title')}
           description={t('resume-page.experience.description')}
+          cardContentClassName="space-y-4"
         >
           {myJobExperiences.map((item, index) => (
             <ResumeItem
@@ -74,6 +75,7 @@ const ResumePage = () => {
         <ResumeCard
           title={t('education.title')}
           description={t('education.description')}
+          cardContentClassName="space-y-4"
         >
           {myEducation.map((item, index) => (
             <ResumeItem
