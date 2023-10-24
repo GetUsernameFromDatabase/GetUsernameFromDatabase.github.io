@@ -73,8 +73,6 @@ async function translateObject(
   initialSource: TranslationSource,
   locale: LocaleFile,
 ) {
-  // TODO: make it account for translation functions https://www.i18next.com/translation-function/essentials
-
   async function recursiveTranslator(
     source: TranslationSource,
   ): Promise<TranslationSource> {

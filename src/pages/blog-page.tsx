@@ -7,7 +7,10 @@ const BlogPage = () => {
   const { t } = useTranslation();
 
   return (
-    <PageWrapper title={capitalizeWords(t('blog-page.title'))}></PageWrapper>
+    <PageWrapper title={capitalizeWords(t('blog-page.title'))}>
+      TODO: add stuff that interests me (youtube videos/channels, posts (guard
+      clause, switch superiority?))
+    </PageWrapper>
   );
 };
 

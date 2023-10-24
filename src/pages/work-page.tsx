@@ -7,7 +7,10 @@ const Work = () => {
   const { t } = useTranslation();
 
   return (
-    <PageWrapper title={capitalizeWords(t('work-page.title'))}></PageWrapper>
+    <PageWrapper title={capitalizeWords(t('work-page.title'))}>
+      TODO: fetch data and display from
+      https://api.github.com/users/GetUsernameFromDatabase/repos
+    </PageWrapper>
   );
 };
 

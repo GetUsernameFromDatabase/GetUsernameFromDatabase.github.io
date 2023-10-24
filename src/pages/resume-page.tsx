@@ -14,8 +14,6 @@ import { myJobExperiences } from '@/info/experiences';
 import { myKnowledges } from '@/info/knowledge';
 import { capitalizeWords } from '@/utils/string-manipulation';
 
-// TODO: would like to bypass tailwind limitation percentage
-// Maybe parse the width from after:w-[]?
 const skillData = [
   {
     label: 'Web Design',

@@ -8,14 +8,9 @@ TODO List:
 
 - theme -- change the colours to something I like more (teal, cyan)
 - typography -- look over text size readability
-- do the todos scattered around the code
-- populate
-  - blogs -- just thoughts, links to stuff I like/adore
-  - works -- github repo links
-  - resume -- duh
 - preload background images
 - lighthouse
-- refactor i18n -- transpile and stuff like that
+- do the todos scattered around the code
 
 ## Bootstrapped with React + TypeScript + Vite
 

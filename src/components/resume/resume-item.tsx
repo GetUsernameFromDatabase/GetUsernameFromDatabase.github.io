@@ -17,6 +17,7 @@ export interface ResumeItemProperties {
   className?: string | string[];
 }
 
+// TODO: add capability to show only year and calculate only by year
 const ResumeItem: React.FC<ResumeItemProperties> = ({
   className,
   ...properties
