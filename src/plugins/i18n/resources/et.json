@@ -82,8 +82,18 @@
         "title": "Kogemused",
         "description": "Minu töökogemus"
       },
-      "working-skills": "Tööoskused",
-      "knowledges": "Teadmised"
+      "certificates": {
+        "title": "Sertifikaadid",
+        "description": "Minu tunnistused",
+        "show-credential": "Näita mandaati",
+        "show-certificate": "Näita sertifikaati",
+        "credential-id": "Mandaadi ID",
+        "issuer": "Väljaandja"
+      },
+      "knowledges": {
+        "title": "Teadmised",
+        "description": "Omandatud teadmised ja kasutatud tööriistad"
+      }
     },
     "work-page": {
       "title": "Töö"

@@ -78,8 +78,18 @@
         "title": "Experience",
         "description": "My work experience"
       },
-      "working-skills": "Working Skills",
-      "knowledges": "Knowledges"
+      "certificates": {
+        "title": "Certificates",
+        "description": "My certificates",
+        "show-credential": "Show credential",
+        "show-certificate": "Show certificate",
+        "credential-id": "Credential ID",
+        "issuer": "Issuer"
+      },
+      "knowledges": {
+        "title": "Knowledges",
+        "description": "Knowledges I've acquired and tools I've used"
+      }
     },
     "work-page": {
       "title": "Work"

@@ -10,6 +10,7 @@ import type { ContactItem, SocialMediaLink } from '@type/my-types';
 
 export const personalInfo = {
   name: 'Ryan Murulo',
+  nameBefore: 'Ryan Kruberg', // TODO: use this
   avatar: 'https://avatars.githubusercontent.com/u/49920260?v=4',
   email: 'rkruberg@gmail.com',
   location: 'Estonia/Tartu',

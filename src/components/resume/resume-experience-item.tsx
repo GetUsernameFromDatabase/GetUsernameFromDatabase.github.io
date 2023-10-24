@@ -8,7 +8,7 @@ import { useWindowSize } from '@/hooks/use-window-size';
 import { cn } from '@/lib/utils';
 import { getSkimmedDuration } from '@/utils/dates';
 
-export interface ResumeItemProperties {
+export interface ResumeExperienceItemProperties {
   title: string;
   institution: string;
   start_date: DateTime;
@@ -18,7 +18,7 @@ export interface ResumeItemProperties {
 }
 
 // TODO: add capability to show only year and calculate only by year
-const ResumeItem: React.FC<ResumeItemProperties> = ({
+const ResumeExperienceItem: React.FC<ResumeExperienceItemProperties> = ({
   className,
   ...properties
 }) => {
@@ -86,4 +86,4 @@ const ResumeItem: React.FC<ResumeItemProperties> = ({
   );
 };
 
-export default ResumeItem;
+export default ResumeExperienceItem;

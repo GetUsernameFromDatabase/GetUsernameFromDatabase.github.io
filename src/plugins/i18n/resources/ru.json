@@ -82,8 +82,18 @@
         "title": "Опыт",
         "description": "Мой опыт работы"
       },
-      "working-skills": "Рабочие навыки",
-      "knowledges": "Знания"
+      "certificates": {
+        "title": "Сертификаты",
+        "description": "Мои сертификаты",
+        "show-credential": "Показать учетные данные",
+        "show-certificate": "Показать сертификат",
+        "credential-id": "Идентификатор учетных данных",
+        "issuer": "Эмитент"
+      },
+      "knowledges": {
+        "title": "Знания",
+        "description": "Знания, которые я приобрел, и инструменты, которые я использовал"
+      }
     },
     "work-page": {
       "title": "Работа"
