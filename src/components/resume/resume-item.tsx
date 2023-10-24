@@ -59,6 +59,7 @@ const ResumeItem: React.FC<ResumeItemProperties> = ({
         {`${dateFromTill} • ${skimmedDateDuration.toHuman()}`}
       </span>
       <h4 className="text-xl font-medium text-primary">{properties.title}</h4>
+      <span className="text-sm text-primary/90">{properties.institution}</span>
       {properties.description && (
         <p
           ref={descriptionReference}
