@@ -65,8 +65,15 @@ const ResumePage = () => {
         <ResumeCard
           title={t('resume-page.certificates.title')}
           description={
-            t('resume-page.certificates.description') +
-            ` (${myCertificates.length})`
+            <>
+              {t('resume-page.certificates.description') +
+                ` (${myCertificates.length})`}
+              <Button variant="link" asChild>
+                <Link to="https://www.linkedin.com/in/ryan-murulo-415852147/details/certifications/">
+                  {t('see-more-on', { ns: 'common' })} linkedIn
+                </Link>
+              </Button>
+            </>
           }
           cardContentClassName="space-y-4 overflow-auto max-h-80"
         >
@@ -79,7 +86,16 @@ const ResumePage = () => {
         </ResumeCard>
         <ResumeCard
           title={t('resume-page.knowledges.title')}
-          description={t('resume-page.knowledges.description')}
+          description={
+            <>
+              {t('resume-page.knowledges.description')}
+              <Button variant="link" asChild>
+                <Link to="https://www.linkedin.com/in/ryan-murulo-415852147/details/certifications/">
+                  {t('see-more-on', { ns: 'common' })} linkedIn
+                </Link>
+              </Button>
+            </>
+          }
           cardContentClassName="space-y-4"
         >
           <div>
@@ -89,11 +105,6 @@ const ResumePage = () => {
               </Badge>
             ))}
           </div>
-          <Button variant="link" asChild>
-            <Link to="https://www.linkedin.com/in/ryan-murulo-415852147/details/skills/">
-              {t('see-more-on', { ns: 'common' })} linkedIn
-            </Link>
-          </Button>
         </ResumeCard>
       </div>
     </PageWrapper>

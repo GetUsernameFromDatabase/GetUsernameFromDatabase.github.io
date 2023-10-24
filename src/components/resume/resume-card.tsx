@@ -8,7 +8,7 @@ import {
 
 export interface ResumeCardProperties {
   title: string;
-  description?: string;
+  description?: string | React.ReactNode;
   rootClassName?: string;
   cardHeaderClassName?: string;
   cardContentClassName?: string;
