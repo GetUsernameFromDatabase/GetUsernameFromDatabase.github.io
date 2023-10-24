@@ -1,38 +1,15 @@
-import { DateTime } from 'luxon';
 import { useTranslation } from 'react-i18next';
 
-import ResumeItem, {
-  type ResumeItemProperties,
-} from '../components/resume/resume-item';
 import ResumeKnowledgeItem from '../components/resume/resume-knowledge-item';
 import ResumeSkillItem from '../components/resume/resume-skill-item';
 
 import PageSection from '@/components/page/page-section';
 import PageWrapper from '@/components/page/page-wrapper';
 import ResumeCard from '@/components/resume/resume-card';
+import ResumeItem from '@/components/resume/resume-item';
+import { myEducation } from '@/info/education';
 import { myJobExperiences } from '@/info/experiences';
 import { capitalizeWords } from '@/utils/string-manipulation';
-
-const educationData: ResumeItemProperties[] = [
-  {
-    start_date: DateTime.now(),
-    title: 'Ph.D in Horriblensess',
-    institution: 'ABC University, Los Angeles, CA',
-    className: 'bg-yellow-100 dark:bg-yellow-700',
-  },
-  {
-    start_date: DateTime.now(),
-    title: 'Sr. Software Tester',
-    institution: 'Google Inc.',
-    className: 'bg-rose-100 dark:bg-rose-700',
-  },
-  {
-    start_date: DateTime.now(),
-    title: 'Best Developer',
-    institution: 'University Of Melbourne, NA',
-    className: 'bg-indigo-100 dark:bg-indigo-700',
-  },
-];
 
 // TODO: would like to bypass tailwind limitation percentage
 // Maybe parse the width from after:w-[]?
@@ -73,7 +50,7 @@ const ResumePage = () => {
 
   return (
     <PageWrapper title={capitalizeWords(t('resume-page.title'))}>
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="space-y-3">
         <ResumeCard
           title={t('resume-page.experience.title')}
           description={t('resume-page.experience.description')}
@@ -94,20 +71,30 @@ const ResumePage = () => {
             ></ResumeItem>
           ))}
         </ResumeCard>
-        <PageSection title={t('resume-page.education.title')}>
-          <div className="grid grid-cols-1 gap-6">
-            {educationData.map((item, index) => (
-              <ResumeItem
-                key={index}
-                {...item}
-                description="aa asd asd asd adsasdasasdasdas a dasdasd asd asd"
-              />
-            ))}
-          </div>
-        </PageSection>
+        <ResumeCard
+          title={t('education.title')}
+          description={t('education.description')}
+        >
+          {myEducation.map((item, index) => (
+            <ResumeItem
+              key={index}
+              title={item.institute}
+              institution={t(item.type)}
+              start_date={item.start_date}
+              end_date={item.end_date}
+              description={
+                t(item.description, {
+                  joinArrays: '\n',
+                }) as string
+              }
+              className={item.className}
+            ></ResumeItem>
+          ))}
+        </ResumeCard>
       </div>
       <div className="grid grid-cols-1 gap-6 pt-4 lg:grid-cols-2 lg:pt-12">
         <PageSection title={t('resume-page.working-skills')}>
+          {/* TODO: show certificates instead */}
           <div className="skill_items rounded-md bg-primary-foreground">
             {skillData.map((item, index) => (
               <ResumeSkillItem key={index} {...item} />

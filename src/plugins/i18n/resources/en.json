@@ -78,9 +78,6 @@
         "title": "Experience",
         "description": "My work experience"
       },
-      "education": {
-        "title": "Education"
-      },
       "working-skills": "Working Skills",
       "knowledges": "Knowledges"
     },
@@ -156,6 +153,16 @@
           "- view where people are located at"
         ]
       }
+    },
+    "education": {
+      "title": "Education",
+      "description": "My academic journey",
+      "type": {
+        "vocational": "Vocational education",
+        "secondary": "Secondary education"
+      },
+      "MHG_description": "Nature Orientation",
+      "TPT_description": "Software Development"
     },
     "till-now": "till now"
   },

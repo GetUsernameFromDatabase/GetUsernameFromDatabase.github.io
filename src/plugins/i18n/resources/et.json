@@ -82,9 +82,6 @@
         "title": "Kogemused",
         "description": "Minu töökogemus"
       },
-      "education": {
-        "title": "Haridus"
-      },
       "working-skills": "Tööoskused",
       "knowledges": "Teadmised"
     },
@@ -148,6 +145,16 @@
           "- vaadata, kus inimesed asuvad"
         ]
       }
+    },
+    "education": {
+      "title": "Haridus",
+      "description": "Minu akadeemiline teekond",
+      "type": {
+        "vocational": "Kutseharidus",
+        "secondary": "Keskharidus"
+      },
+      "MHG_description": "Loodusorientatsioon",
+      "TPT_description": "Tarkvaraarendus"
     },
     "till-now": "praeguseni"
   },
