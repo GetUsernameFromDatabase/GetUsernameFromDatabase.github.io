@@ -16,10 +16,15 @@ export const personalInfo = {
   location: 'Estonia/Tartu',
   phone: '+372 5388 9416',
   birthday: DateTime.fromISO('2001-07-25'),
-  linkedin: 'https://www.linkedin.com/in/ryan-murulo-415852147/',
+  linkedin: 'https://www.linkedin.com/in/ryan-murulo-415852147',
   facebook: 'https://www.facebook.com/Ryanuskas/',
   github: 'https://github.com/GetUsernameFromDatabase',
   hackerrank: 'https://www.hackerrank.com/rkruberg',
+} as const;
+
+export const linkedInLinks = {
+  certifications: `${personalInfo.linkedin}/details/certifications/`,
+  skills: `${personalInfo.linkedin}/details/skills/`,
 } as const;
 
 export const socialMediaLinks: Readonly<SocialMediaLink[]> = [

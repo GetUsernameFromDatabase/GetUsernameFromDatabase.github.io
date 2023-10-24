@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { myEducation } from '@/info/education';
 import { myJobExperiences } from '@/info/experiences';
 import { myCertificates, myKnowledges } from '@/info/knowledge';
+import { linkedInLinks } from '@/info/personal';
 import { capitalizeWords } from '@/utils/string-manipulation';
 
 const ResumePage = () => {
@@ -69,7 +70,7 @@ const ResumePage = () => {
               {t('resume-page.certificates.description') +
                 ` (${myCertificates.length})`}
               <Button variant="link" asChild>
-                <Link to="https://www.linkedin.com/in/ryan-murulo-415852147/details/certifications/">
+                <Link to={linkedInLinks.certifications} target="_blank">
                   {t('see-more-on', { ns: 'common' })} linkedIn
                 </Link>
               </Button>
@@ -90,7 +91,7 @@ const ResumePage = () => {
             <>
               {t('resume-page.knowledges.description')}
               <Button variant="link" asChild>
-                <Link to="https://www.linkedin.com/in/ryan-murulo-415852147/details/certifications/">
+                <Link to={linkedInLinks.skills} target="_blank">
                   {t('see-more-on', { ns: 'common' })} linkedIn
                 </Link>
               </Button>
