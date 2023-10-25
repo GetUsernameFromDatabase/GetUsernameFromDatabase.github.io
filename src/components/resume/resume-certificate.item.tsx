@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { Button } from '../ui/button';
 
-import type { MyCertificate } from '@/info/knowledge';
+import type { MyCertificate } from '@/data/knowledge';
 
 interface ResumeCertificateItemProperties extends MyCertificate {}
 

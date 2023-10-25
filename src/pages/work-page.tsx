@@ -10,8 +10,8 @@ import GithubCard from '@/components/work/github-card';
 import {
   type GitHubResponseData,
   gitTableColumns,
-} from '@/info/git-table-columns';
-import storedGitHubRepoState from '@/info/github-repos.json';
+} from '@/data/git-table-columns';
+import storedGitHubRepoState from '@/data/github-repos.json';
 // import { personalInfo } from '@/info/personal';
 import { capitalizeWords } from '@/utils/string-manipulation';
 

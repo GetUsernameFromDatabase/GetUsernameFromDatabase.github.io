@@ -7,10 +7,10 @@ import ResumeCertificateItem from '@/components/resume/resume-certificate.item';
 import ResumeExperienceItem from '@/components/resume/resume-experience-item';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { myEducation } from '@/info/education';
-import { myJobExperiences } from '@/info/experiences';
-import { myCertificates, myKnowledges } from '@/info/knowledge';
-import { linksConnectedToMe } from '@/info/personal';
+import { myEducation } from '@/data/education';
+import { myJobExperiences } from '@/data/experiences';
+import { myCertificates, myKnowledges } from '@/data/knowledge';
+import { linksConnectedToMe } from '@/data/personal';
 import { capitalizeWords } from '@/utils/string-manipulation';
 
 const ResumePage = () => {

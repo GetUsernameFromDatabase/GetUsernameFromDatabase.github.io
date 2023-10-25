@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import ContactViaMailForm from '../components/contact/contact-form';
 import ContactInfo from '../components/contact/contact-info';
-import { personalInfo } from '../info/personal';
+import { personalInfo } from '../data/personal';
 
 import PageWrapper from '@/components/page/page-wrapper';
 import { capitalizeWords } from '@/utils/string-manipulation';

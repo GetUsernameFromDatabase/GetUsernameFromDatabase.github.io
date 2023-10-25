@@ -5,7 +5,7 @@ import SidebarCvDownload from './sidebar-cv-download';
 import SidebarNameProffesion from './sidebar-person-info';
 import SidebarSocialMedia from './sidebar-social-media';
 
-import { contactItems, personalInfo, socialMediaLinks } from '@/info/personal';
+import { contactItems, personalInfo, socialMediaLinks } from '@/data/personal';
 import { capitalizeWords } from '@/utils/string-manipulation';
 
 interface SidebarProperties {
