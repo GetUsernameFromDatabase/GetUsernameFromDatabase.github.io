@@ -11,6 +11,7 @@ TODO List:
 - preload background images
 - lighthouse
 - do the todos scattered around the code
+- maybe replace all icons with [luicide](https://lucide.dev/icons/)
 
 ## Bootstrapped with React + TypeScript + Vite
 

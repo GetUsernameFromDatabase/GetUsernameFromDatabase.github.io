@@ -1,3 +1,7 @@
+/**
+ * Please use tailwind if possible:
+ * - `capitalize` if you can https://tailwindcss.com/docs/text-transform
+ */
 export function capitalizeWords(input: string): string {
   return input
     .split(' ')
@@ -6,7 +10,9 @@ export function capitalizeWords(input: string): string {
 }
 
 /**
- * Was supposed to be for truncating text -- decided to use CSS instead
+ * Please use tailwind if possible:
+ * - `line-clamp` https://tailwindcss.com/docs/line-clamp
+ * - `truncate` https://tailwindcss.com/docs/text-overflow#truncate
  */
 export function truncateText(input: string, maxLength = 50): string {
   const tooLongString = '...';
