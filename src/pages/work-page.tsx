@@ -9,6 +9,7 @@ import GithubCard from '@/components/work/github-card';
 // import { useOctokit } from '@/hooks/use-octokit';
 import {
   type GitHubResponseData,
+  getGitTableColumnsFacetFilterOptions,
   gitTableColumns,
 } from '@/data/git-table-columns';
 import storedGitHubRepoState from '@/data/github-repos.json';
@@ -35,13 +36,19 @@ const Work = () => {
   //   }
   //   fetchMyRepos();
   // });
+
+  const facetFilterColumns = getGitTableColumnsFacetFilterOptions(repoData);
   return (
     <PageWrapper title={capitalizeWords(t('work-page.title'))}>
       <DataTable
         columns={gitTableColumns}
         data={repoData}
         toolbar={(table) =>
-          GitDataTableToolbar({ table, filterColumn: 'name' })
+          GitDataTableToolbar({
+            table,
+            filterColumn: 'name',
+            facetFilterColumns,
+          })
         }
       ></DataTable>
       <div className="space-y-4">
