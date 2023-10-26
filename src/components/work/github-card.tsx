@@ -24,9 +24,18 @@ interface GithubCardProperties {
 }
 
 const getLanguageStyle = (language?: string) => {
-  console.log(language);
-  const defaultClassName = 'fill-sky-400 text-sky-400';
-  return defaultClassName;
+  let className = 'fill-sky-400 text-sky-400';
+  // TODO: finish this or scrap the entire file
+  switch (language?.toLowerCase()) {
+    case 'shell': {
+      // This assignment is for my IDE mostly -- tailwind intellisense
+      className = 'fill-[#89e051] text-[#89e051]';
+      return className;
+    }
+    default: {
+      return className;
+    }
+  }
 };
 
 function GithubCard(properties: GithubCardProperties) {

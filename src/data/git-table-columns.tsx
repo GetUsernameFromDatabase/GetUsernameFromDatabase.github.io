@@ -22,7 +22,13 @@ export const gitTableColumns: ColumnDef<GitHubResponseData[0]>[] = [
     accessorKey: 'description',
     header: 'Description',
   },
-  { accessorKey: 'language', header: 'Language' },
+  {
+    accessorKey: 'language',
+    header: 'Language',
+    filterFn: (row, id, value) => {
+      return value.includes(row.getValue(id));
+    },
+  },
   {
     accessorKey: 'html_url',
     enableColumnFilter: true,
