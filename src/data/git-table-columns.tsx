@@ -1,4 +1,4 @@
-import type { ColumnDef } from '@tanstack/react-table';
+import { createColumnHelper } from '@tanstack/react-table';
 import { LinkIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -7,27 +7,22 @@ import { DataTableColumnHeader } from '@/components/ui/data-table-column-header'
 import type { DataTableToolbarProperties } from '@/components/work/git-data-table-toolbar';
 import type { TGitHubReposResponseData } from '@type/external-api-responses';
 
-// TODO: finish this, use columnHelper https://tanstack.com/table/v8/docs/guide/column-defs#column-helpers
-export const gitTableColumns: ColumnDef<TGitHubReposResponseData[0]>[] = [
-  {
-    accessorKey: 'name',
+/** column helper */
+const ch = createColumnHelper<TGitHubReposResponseData[0]>();
+export const gitTableColumns = [
+  ch.accessor('name', {
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Name" />
     ),
-  },
-  {
-    accessorKey: 'description',
-    header: 'Description',
-  },
-  {
-    accessorKey: 'language',
+  }),
+  ch.accessor('description', { header: 'Description' }),
+  ch.accessor('language', {
     header: 'Language',
     filterFn: (row, id, value) => {
       return value.includes(row.getValue(id));
     },
-  },
-  {
-    accessorKey: 'html_url',
+  }),
+  ch.accessor('html_url', {
     enableColumnFilter: true,
     header: 'Link',
     cell: (properties) => {
@@ -41,7 +36,7 @@ export const gitTableColumns: ColumnDef<TGitHubReposResponseData[0]>[] = [
         </Button>
       );
     },
-  },
+  }),
 ];
 
 export const getGitTableColumnsFacetFilterOptions = (
