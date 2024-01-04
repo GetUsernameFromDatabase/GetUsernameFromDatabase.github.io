@@ -3,6 +3,7 @@
 import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 import type { Table } from '@tanstack/react-table';
 import { SlidersHorizontal } from 'lucide-react';
+import { Trans, useTranslation } from 'react-i18next';
 
 import { Button } from './button';
 import {
@@ -20,21 +21,23 @@ interface DataTableViewOptionsProperties<TData> {
 export function DataTableViewOptions<TData>({
   table,
 }: DataTableViewOptionsProperties<TData>) {
-  // TODO: translate
+  const { t } = useTranslation();
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
           size="sm"
-          className="ml-auto hidden h-8 lg:flex"
+          className="ml-auto hidden h-8 capitalize sm:flex"
         >
           <SlidersHorizontal className="mr-2 h-4 w-4" />
-          View
+          {t('view', { ns: 'common' })}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[150px]">
-        <DropdownMenuLabel>Toggle columns</DropdownMenuLabel>
+        <DropdownMenuLabel className="capitalize">
+          {t('toggle-columns', { ns: 'common' })}
+        </DropdownMenuLabel>
         <DropdownMenuSeparator />
         {table
           .getAllColumns()
@@ -42,6 +45,7 @@ export function DataTableViewOptions<TData>({
             (column) => column.accessorFn !== undefined && column.getCanHide(),
           )
           .map((column) => {
+            const translationKey = column.columnDef.meta?.translationKey;
             return (
               <DropdownMenuCheckboxItem
                 key={column.id}
@@ -49,8 +53,11 @@ export function DataTableViewOptions<TData>({
                 checked={column.getIsVisible()}
                 onCheckedChange={(value) => column.toggleVisibility(!!value)}
               >
-                {/* TODO: use column id for translate or extract only text from column.columnDef.header */}
-                {column.id}
+                {translationKey ? (
+                  <Trans i18nKey={translationKey}>{{ translationKey }}</Trans>
+                ) : (
+                  column.id
+                )}
               </DropdownMenuCheckboxItem>
             );
           })}

@@ -174,7 +174,14 @@
       "MHG_description": "Nature Orientation",
       "TPT_description": "Software Development"
     },
-    "till-now": "till now"
+    "repo-table": {
+      "headers": {
+        "name": "name",
+        "description": "description",
+        "language": "language",
+        "html_url": "link"
+      }
+    }
   },
   "common": {
     "forms": {
@@ -187,6 +194,9 @@
     "see-more": "see more",
     "see-less": "see less",
     "see-more-on": "See more on",
-    "last-updated-at": "Last updated at"
+    "last-updated-at": "Last updated at",
+    "till-now": "till now",
+    "toggle-columns": "toggle columns",
+    "view": "view"
   }
 }

@@ -5,8 +5,15 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { DataTableColumnHeader } from '@/components/ui/data-table-column-header';
 import type { DataTableToolbarProperties } from '@/components/work/git-data-table-toolbar';
+import type { TranslationNsKeys } from '@/plugins/i18n';
 import type { TGitHubReposResponseData } from '@type/external-api-responses';
 
+declare module '@tanstack/table-core' {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface ColumnMeta<TData, TValue> {
+    translationKey: TranslationNsKeys;
+  }
+}
 /** column helper */
 const ch = createColumnHelper<TGitHubReposResponseData[0]>();
 export const gitTableColumns = [
@@ -14,10 +21,15 @@ export const gitTableColumns = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Name" />
     ),
+    meta: { translationKey: 'repo-table.headers.name' },
   }),
-  ch.accessor('description', { header: 'Description' }),
+  ch.accessor('description', {
+    header: 'Description',
+    meta: { translationKey: 'repo-table.headers.description' },
+  }),
   ch.accessor('language', {
     header: 'Language',
+    meta: { translationKey: 'repo-table.headers.language' },
     filterFn: (row, id, value) => {
       return value.includes(row.getValue(id));
     },
@@ -25,6 +37,7 @@ export const gitTableColumns = [
   ch.accessor('html_url', {
     enableColumnFilter: true,
     header: 'Link',
+    meta: { translationKey: 'repo-table.headers.html_url' },
     cell: (properties) => {
       const value = properties.getValue();
       if (typeof value !== 'string') return;

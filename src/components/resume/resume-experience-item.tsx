@@ -41,7 +41,7 @@ const ResumeExperienceItem: React.FC<ResumeExperienceItemProperties> = ({
   };
 
   const dateFromTill = `${properties.start_date.toLocaleString()} - ${
-    properties.end_date?.toLocaleString() ?? t('till-now')
+    properties.end_date?.toLocaleString() ?? t('till-now', { ns: 'common' })
   }`;
 
   const dateDuration = (properties.end_date ?? DateTime.now())

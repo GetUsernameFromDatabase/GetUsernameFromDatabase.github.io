@@ -2,7 +2,7 @@
   "translation": {
     "404": {
       "title": "404 Lehekülge ei leitud",
-      "description": "Lehte, millele proovite navigeerida, pole olemas"
+      "description": "Lehte, kuhu proovite navigeerida, pole olemas"
     },
     "languages": {
       "available-languages": "Saadaolevad keeled",
@@ -49,7 +49,7 @@
           "title": "Andmebaas",
           "description": [
             "Taustaprogrammiga töötamine nõuab tavaliselt ka andmete salvestamist",
-            "Nii et andmete töötlemise/salvestuse osas on mul kogemusi SQL-iga (Postgres, Oracle, MySQL, SQLite)"
+            "Nii et andmete töötlemise/salvestuse osas olen saanud kogemusi SQL-iga (Postgres, Oracle, MySQL, SQLite)"
           ]
         },
         "dev-ops": {
@@ -128,7 +128,7 @@
           "Töötas välja uue sisevõrgu versiooni Nuxt.js-i abil",
           "Loodud uus liides andmete sisestamiseks (frontend), üldine süsteem andmete valideerimiseks (taustaprogramm).",
           "Loodud pythoni skript, mis genereerib html- ja javascripti sisu, mida saab taustaprogrammis (PHP) kasutada sisu teenindamiseks.",
-          "Põhimõtteliselt viis, kuidas:",
+          "Põhimõtteliselt viis:",
           "- töötage kiiresti välja, kuidas frontend välja näeks",
           "- tagage ühendatud süsteemide koos töötamine (elemendi ID võib olla ühes kohas ja levib HTML-i, JavaScripti)"
         ],
@@ -166,7 +166,14 @@
       "MHG_description": "Loodusorientatsioon",
       "TPT_description": "Tarkvaraarendus"
     },
-    "till-now": "praeguseni"
+    "repo-table": {
+      "headers": {
+        "name": "nimi",
+        "description": "kirjeldus",
+        "language": "keel",
+        "html_url": "link"
+      }
+    }
   },
   "common": {
     "forms": {
@@ -179,6 +186,7 @@
     "see-more": "näe rohkem",
     "see-less": "näe vähem",
     "see-more-on": "Vaata lähemalt",
-    "last-updated-at": "Viimati värskendatud kell"
+    "last-updated-at": "Viimati värskendatud kell",
+    "till-now": "praeguseni"
   }
 }
