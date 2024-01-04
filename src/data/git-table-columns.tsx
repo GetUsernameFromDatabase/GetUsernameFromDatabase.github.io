@@ -1,4 +1,3 @@
-import type { Endpoints } from '@octokit/types/dist-types/generated/Endpoints';
 import type { ColumnDef } from '@tanstack/react-table';
 import { LinkIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,12 +5,10 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { DataTableColumnHeader } from '@/components/ui/data-table-column-header';
 import type { DataTableToolbarProperties } from '@/components/work/git-data-table-toolbar';
+import type { TGitHubReposResponseData } from '@type/external-api-responses';
 
-export type GitHubResponseData =
-  Endpoints['GET /users/{username}/repos']['response']['data'];
-
-// TODO: finish this
-export const gitTableColumns: ColumnDef<GitHubResponseData[0]>[] = [
+// TODO: finish this, use columnHelper https://tanstack.com/table/v8/docs/guide/column-defs#column-helpers
+export const gitTableColumns: ColumnDef<TGitHubReposResponseData[0]>[] = [
   {
     accessorKey: 'name',
     header: ({ column }) => (
@@ -48,7 +45,7 @@ export const gitTableColumns: ColumnDef<GitHubResponseData[0]>[] = [
 ];
 
 export const getGitTableColumnsFacetFilterOptions = (
-  repoData: GitHubResponseData,
+  repoData: TGitHubReposResponseData,
 ) => {
   const facetFilterColumns: DataTableToolbarProperties<
     (typeof repoData)[0]
@@ -56,9 +53,9 @@ export const getGitTableColumnsFacetFilterOptions = (
     language: [],
   };
   const uniqueFacetFilterColumnValues: Partial<{
-    [K in keyof GitHubResponseData[0]]: K extends 'language'
+    [K in keyof TGitHubReposResponseData[0]]: K extends 'language'
       ? Set<string>
-      : GitHubResponseData[0][K][];
+      : TGitHubReposResponseData[0][K][];
   }> = {
     language: new Set<string>(),
   };

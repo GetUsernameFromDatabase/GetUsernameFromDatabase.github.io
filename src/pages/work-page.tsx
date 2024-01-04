@@ -1,48 +1,33 @@
 import { DateTime } from 'luxon';
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 
 import PageWrapper from '@/components/page/page-wrapper';
 import { DataTable } from '@/components/ui/data-table';
 import { GitDataTableToolbar } from '@/components/work/git-data-table-toolbar';
 import GithubCard from '@/components/work/github-card';
-// import { useOctokit } from '@/hooks/use-octokit';
 import {
-  type GitHubResponseData,
   getGitTableColumnsFacetFilterOptions,
   gitTableColumns,
 } from '@/data/git-table-columns';
-import storedGitHubRepoState from '@/data/github-repos.json';
-// import { personalInfo } from '@/info/personal';
+import type { RootState } from '@/store';
 import { capitalizeWords } from '@/utils/string-manipulation';
 
 const Work = () => {
   const { t } = useTranslation();
-  // const octokit = useOctokit();
-
-  const [repoData] = useState<GitHubResponseData>(storedGitHubRepoState);
+  const githubData = useSelector((state: RootState) => state.githubData);
 
   // TODO: also add gitlab https://gitlab.com/api/v4/users/GetUsernameFromDatabase/projects
   // TODO: unify github and gitlab, add filtering/sorting
 
-  // TODO: make sure this gets requested as rarely as possible -- possibly use a store (find pinia, https://redux.js.org/ ???)
-  // useEffect(() => {
-  //   async function fetchMyRepos() {
-  //     const request = await octokit.request('GET /users/{username}/repos', {
-  //       username: personalInfo.names.github,
-  //     });
-  //     console.log(request.data);
-  //     setRepoData(request.data);
-  //   }
-  //   fetchMyRepos();
-  // });
-
-  const facetFilterColumns = getGitTableColumnsFacetFilterOptions(repoData);
+  const facetFilterColumns = getGitTableColumnsFacetFilterOptions(
+    githubData.repositories,
+  );
   return (
     <PageWrapper title={capitalizeWords(t('work-page.title'))}>
       <DataTable
         columns={gitTableColumns}
-        data={repoData}
+        data={githubData.repositories}
         toolbar={(table) =>
           GitDataTableToolbar({
             table,
@@ -52,7 +37,7 @@ const Work = () => {
         }
       ></DataTable>
       <div className="space-y-4">
-        {repoData?.map((value, index) => (
+        {githubData.repositories.map((value, index) => (
           <GithubCard
             key={index}
             title={value.name}
